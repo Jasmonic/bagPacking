@@ -1,0 +1,1314 @@
+[5, 3, 2]
+[Item{type=0, id=0, p=40, q=60, r=50, num=1, volume=120000}, Item{type=1, id=1, p=230, q=80, r=80, num=1, volume=1472000}, Item{type=2, id=2, p=10, q=10, r=10, num=1, volume=1000}, Item{type=2, id=3, p=10, q=10, r=10, num=1, volume=1000}, Item{type=2, id=4, p=10, q=10, r=10, num=1, volume=1000}, Item{type=2, id=5, p=10, q=10, r=10, num=1, volume=1000}, Item{type=2, id=6, p=10, q=10, r=10, num=1, volume=1000}, Item{type=3, id=7, p=200, q=140, r=100, num=1, volume=2800000}, Item{type=4, id=8, p=210, q=100, r=160, num=1, volume=3360000}, Item{type=5, id=9, p=180, q=100, r=70, num=1, volume=1260000}, Item{type=6, id=10, p=200, q=150, r=150, num=1, volume=4500000}, Item{type=7, id=11, p=250, q=100, r=160, num=1, volume=4000000}, Item{type=8, id=12, p=280, q=220, r=70, num=1, volume=4312000}]
+[Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=5}, Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=3}, Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=2}]
+Instance{bagTypeCount=3, itemTypeCount=9, bagCount=10, itemCount=13}
+[Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=5}, Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=3}, Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=2}]
+3
+0,1
+1,2
+2,7
+7,8
+8,9
+9,10
+10,11
+11,12
+12,13
+IloModel  {
+IloMinimize  : (0.4*n_0 + 0.4*n_1 + 0.4*n_2 + 0.4*n_3 + 0.4*n_4 + 0.7*n_5 + 0.7*n_6 + 0.7*n_7 + 1.0*n_8 + 1.0*n_9)
+IloRange bag_and_box0 : 1.0 <= (1.0*s_0,0 + 1.0*s_0,1 + 1.0*s_0,2 + 1.0*s_0,3 + 1.0*s_0,4 + 1.0*s_0,5 + 1.0*s_0,6 + 1.0*s_0,7 + 1.0*s_0,8 + 1.0*s_0,9) <= 1.0
+IloRange bag_and_box1 : 1.0 <= (1.0*s_1,0 + 1.0*s_1,1 + 1.0*s_1,2 + 1.0*s_1,3 + 1.0*s_1,4 + 1.0*s_1,5 + 1.0*s_1,6 + 1.0*s_1,7 + 1.0*s_1,8 + 1.0*s_1,9) <= 1.0
+IloRange bag_and_box2 : 1.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 + 1.0*s_2,5 + 1.0*s_2,6 + 1.0*s_2,7 + 1.0*s_2,8 + 1.0*s_2,9) <= 1.0
+IloRange bag_and_box3 : 1.0 <= (1.0*s_3,0 + 1.0*s_3,1 + 1.0*s_3,2 + 1.0*s_3,3 + 1.0*s_3,4 + 1.0*s_3,5 + 1.0*s_3,6 + 1.0*s_3,7 + 1.0*s_3,8 + 1.0*s_3,9) <= 1.0
+IloRange bag_and_box4 : 1.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 + 1.0*s_4,5 + 1.0*s_4,6 + 1.0*s_4,7 + 1.0*s_4,8 + 1.0*s_4,9) <= 1.0
+IloRange bag_and_box5 : 1.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 + 1.0*s_5,5 + 1.0*s_5,6 + 1.0*s_5,7 + 1.0*s_5,8 + 1.0*s_5,9) <= 1.0
+IloRange bag_and_box6 : 1.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 + 1.0*s_6,4 + 1.0*s_6,5 + 1.0*s_6,6 + 1.0*s_6,7 + 1.0*s_6,8 + 1.0*s_6,9) <= 1.0
+IloRange bag_and_box7 : 1.0 <= (1.0*s_7,0 + 1.0*s_7,1 + 1.0*s_7,2 + 1.0*s_7,3 + 1.0*s_7,4 + 1.0*s_7,5 + 1.0*s_7,6 + 1.0*s_7,7 + 1.0*s_7,8 + 1.0*s_7,9) <= 1.0
+IloRange bag_and_box8 : 1.0 <= (1.0*s_8,0 + 1.0*s_8,1 + 1.0*s_8,2 + 1.0*s_8,3 + 1.0*s_8,4 + 1.0*s_8,5 + 1.0*s_8,6 + 1.0*s_8,7 + 1.0*s_8,8 + 1.0*s_8,9) <= 1.0
+IloRange bag_and_box9 : 1.0 <= (1.0*s_9,0 + 1.0*s_9,1 + 1.0*s_9,2 + 1.0*s_9,3 + 1.0*s_9,4 + 1.0*s_9,5 + 1.0*s_9,6 + 1.0*s_9,7 + 1.0*s_9,8 + 1.0*s_9,9) <= 1.0
+IloRange bag_and_box10 : 1.0 <= (1.0*s_10,0 + 1.0*s_10,1 + 1.0*s_10,2 + 1.0*s_10,3 + 1.0*s_10,4 + 1.0*s_10,5 + 1.0*s_10,6 + 1.0*s_10,7 + 1.0*s_10,8 + 1.0*s_10,9) <= 1.0
+IloRange bag_and_box11 : 1.0 <= (1.0*s_11,0 + 1.0*s_11,1 + 1.0*s_11,2 + 1.0*s_11,3 + 1.0*s_11,4 + 1.0*s_11,5 + 1.0*s_11,6 + 1.0*s_11,7 + 1.0*s_11,8 + 1.0*s_11,9) <= 1.0
+IloRange bag_and_box12 : 1.0 <= (1.0*s_12,0 + 1.0*s_12,1 + 1.0*s_12,2 + 1.0*s_12,3 + 1.0*s_12,4 + 1.0*s_12,5 + 1.0*s_12,6 + 1.0*s_12,7 + 1.0*s_12,8 + 1.0*s_12,9) <= 1.0
+IloRange Volume_0 : -infinity <= (120000.0*s_0,0 + 1472000.0*s_1,0 + 1000.0*s_2,0 + 1000.0*s_3,0 + 1000.0*s_4,0 + 1000.0*s_5,0 + 1000.0*s_6,0 + 2800000.0*s_7,0 + 3360000.0*s_8,0 + 1260000.0*s_9,0 + 4500000.0*s_10,0 + 4000000.0*s_11,0 + 4312000.0*s_12,0 - 6305299.284992639*n_0) <= 0.0
+IloRange Volume_1 : -infinity <= (120000.0*s_0,1 + 1472000.0*s_1,1 + 1000.0*s_2,1 + 1000.0*s_3,1 + 1000.0*s_4,1 + 1000.0*s_5,1 + 1000.0*s_6,1 + 2800000.0*s_7,1 + 3360000.0*s_8,1 + 1260000.0*s_9,1 + 4500000.0*s_10,1 + 4000000.0*s_11,1 + 4312000.0*s_12,1 - 6305299.284992639*n_1) <= 0.0
+IloRange Volume_2 : -infinity <= (120000.0*s_0,2 + 1472000.0*s_1,2 + 1000.0*s_2,2 + 1000.0*s_3,2 + 1000.0*s_4,2 + 1000.0*s_5,2 + 1000.0*s_6,2 + 2800000.0*s_7,2 + 3360000.0*s_8,2 + 1260000.0*s_9,2 + 4500000.0*s_10,2 + 4000000.0*s_11,2 + 4312000.0*s_12,2 - 6305299.284992639*n_2) <= 0.0
+IloRange Volume_3 : -infinity <= (120000.0*s_0,3 + 1472000.0*s_1,3 + 1000.0*s_2,3 + 1000.0*s_3,3 + 1000.0*s_4,3 + 1000.0*s_5,3 + 1000.0*s_6,3 + 2800000.0*s_7,3 + 3360000.0*s_8,3 + 1260000.0*s_9,3 + 4500000.0*s_10,3 + 4000000.0*s_11,3 + 4312000.0*s_12,3 - 6305299.284992639*n_3) <= 0.0
+IloRange Volume_4 : -infinity <= (120000.0*s_0,4 + 1472000.0*s_1,4 + 1000.0*s_2,4 + 1000.0*s_3,4 + 1000.0*s_4,4 + 1000.0*s_5,4 + 1000.0*s_6,4 + 2800000.0*s_7,4 + 3360000.0*s_8,4 + 1260000.0*s_9,4 + 4500000.0*s_10,4 + 4000000.0*s_11,4 + 4312000.0*s_12,4 - 6305299.284992639*n_4) <= 0.0
+IloRange Volume_5 : -infinity <= (120000.0*s_0,5 + 1472000.0*s_1,5 + 1000.0*s_2,5 + 1000.0*s_3,5 + 1000.0*s_4,5 + 1000.0*s_5,5 + 1000.0*s_6,5 + 2800000.0*s_7,5 + 3360000.0*s_8,5 + 1260000.0*s_9,5 + 4500000.0*s_10,5 + 4000000.0*s_11,5 + 4312000.0*s_12,5 - 1.1340839946075162E7*n_5) <= 0.0
+IloRange Volume_6 : -infinity <= (120000.0*s_0,6 + 1472000.0*s_1,6 + 1000.0*s_2,6 + 1000.0*s_3,6 + 1000.0*s_4,6 + 1000.0*s_5,6 + 1000.0*s_6,6 + 2800000.0*s_7,6 + 3360000.0*s_8,6 + 1260000.0*s_9,6 + 4500000.0*s_10,6 + 4000000.0*s_11,6 + 4312000.0*s_12,6 - 1.1340839946075162E7*n_6) <= 0.0
+IloRange Volume_7 : -infinity <= (120000.0*s_0,7 + 1472000.0*s_1,7 + 1000.0*s_2,7 + 1000.0*s_3,7 + 1000.0*s_4,7 + 1000.0*s_5,7 + 1000.0*s_6,7 + 2800000.0*s_7,7 + 3360000.0*s_8,7 + 1260000.0*s_9,7 + 4500000.0*s_10,7 + 4000000.0*s_11,7 + 4312000.0*s_12,7 - 1.1340839946075162E7*n_7) <= 0.0
+IloRange Volume_8 : -infinity <= (120000.0*s_0,8 + 1472000.0*s_1,8 + 1000.0*s_2,8 + 1000.0*s_3,8 + 1000.0*s_4,8 + 1000.0*s_5,8 + 1000.0*s_6,8 + 2800000.0*s_7,8 + 3360000.0*s_8,8 + 1260000.0*s_9,8 + 4500000.0*s_10,8 + 4000000.0*s_11,8 + 4312000.0*s_12,8 - 1.9635004901018865E7*n_8) <= 0.0
+IloRange Volume_9 : -infinity <= (120000.0*s_0,9 + 1472000.0*s_1,9 + 1000.0*s_2,9 + 1000.0*s_3,9 + 1000.0*s_4,9 + 1000.0*s_5,9 + 1000.0*s_6,9 + 2800000.0*s_7,9 + 3360000.0*s_8,9 + 1260000.0*s_9,9 + 4500000.0*s_10,9 + 4000000.0*s_11,9 + 4312000.0*s_12,9 - 1.9635004901018865E7*n_9) <= 0.0
+IloRange boxCut2,0 : 0.0 <= (1.0*s_2,0 - 1.0*s_3,0) <= infinity
+IloRange boxCut2,1 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 - 1.0*s_3,1) <= infinity
+IloRange boxCut2,2 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 - 1.0*s_3,2) <= infinity
+IloRange boxCut2,3 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 - 1.0*s_3,3) <= infinity
+IloRange boxCut2,4 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 - 1.0*s_3,4) <= infinity
+IloRange boxCut2,5 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 + 1.0*s_2,5 - 1.0*s_3,5) <= infinity
+IloRange boxCut2,6 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 + 1.0*s_2,5 + 1.0*s_2,6 - 1.0*s_3,6) <= infinity
+IloRange boxCut2,7 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 + 1.0*s_2,5 + 1.0*s_2,6 + 1.0*s_2,7 - 1.0*s_3,7) <= infinity
+IloRange boxCut2,8 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 + 1.0*s_2,5 + 1.0*s_2,6 + 1.0*s_2,7 + 1.0*s_2,8 - 1.0*s_3,8) <= infinity
+IloRange boxCut2,9 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 + 1.0*s_2,5 + 1.0*s_2,6 + 1.0*s_2,7 + 1.0*s_2,8 + 1.0*s_2,9 - 1.0*s_3,9) <= infinity
+IloRange boxCut3,0 : 0.0 <= (1.0*s_3,0 - 1.0*s_4,0) <= infinity
+IloRange boxCut3,1 : 0.0 <= (1.0*s_3,0 + 1.0*s_3,1 - 1.0*s_4,1) <= infinity
+IloRange boxCut3,2 : 0.0 <= (1.0*s_3,0 + 1.0*s_3,1 + 1.0*s_3,2 - 1.0*s_4,2) <= infinity
+IloRange boxCut3,3 : 0.0 <= (1.0*s_3,0 + 1.0*s_3,1 + 1.0*s_3,2 + 1.0*s_3,3 - 1.0*s_4,3) <= infinity
+IloRange boxCut3,4 : 0.0 <= (1.0*s_3,0 + 1.0*s_3,1 + 1.0*s_3,2 + 1.0*s_3,3 + 1.0*s_3,4 - 1.0*s_4,4) <= infinity
+IloRange boxCut3,5 : 0.0 <= (1.0*s_3,0 + 1.0*s_3,1 + 1.0*s_3,2 + 1.0*s_3,3 + 1.0*s_3,4 + 1.0*s_3,5 - 1.0*s_4,5) <= infinity
+IloRange boxCut3,6 : 0.0 <= (1.0*s_3,0 + 1.0*s_3,1 + 1.0*s_3,2 + 1.0*s_3,3 + 1.0*s_3,4 + 1.0*s_3,5 + 1.0*s_3,6 - 1.0*s_4,6) <= infinity
+IloRange boxCut3,7 : 0.0 <= (1.0*s_3,0 + 1.0*s_3,1 + 1.0*s_3,2 + 1.0*s_3,3 + 1.0*s_3,4 + 1.0*s_3,5 + 1.0*s_3,6 + 1.0*s_3,7 - 1.0*s_4,7) <= infinity
+IloRange boxCut3,8 : 0.0 <= (1.0*s_3,0 + 1.0*s_3,1 + 1.0*s_3,2 + 1.0*s_3,3 + 1.0*s_3,4 + 1.0*s_3,5 + 1.0*s_3,6 + 1.0*s_3,7 + 1.0*s_3,8 - 1.0*s_4,8) <= infinity
+IloRange boxCut3,9 : 0.0 <= (1.0*s_3,0 + 1.0*s_3,1 + 1.0*s_3,2 + 1.0*s_3,3 + 1.0*s_3,4 + 1.0*s_3,5 + 1.0*s_3,6 + 1.0*s_3,7 + 1.0*s_3,8 + 1.0*s_3,9 - 1.0*s_4,9) <= infinity
+IloRange boxCut4,0 : 0.0 <= (1.0*s_4,0 - 1.0*s_5,0) <= infinity
+IloRange boxCut4,1 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 - 1.0*s_5,1) <= infinity
+IloRange boxCut4,2 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 - 1.0*s_5,2) <= infinity
+IloRange boxCut4,3 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 - 1.0*s_5,3) <= infinity
+IloRange boxCut4,4 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 - 1.0*s_5,4) <= infinity
+IloRange boxCut4,5 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 + 1.0*s_4,5 - 1.0*s_5,5) <= infinity
+IloRange boxCut4,6 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 + 1.0*s_4,5 + 1.0*s_4,6 - 1.0*s_5,6) <= infinity
+IloRange boxCut4,7 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 + 1.0*s_4,5 + 1.0*s_4,6 + 1.0*s_4,7 - 1.0*s_5,7) <= infinity
+IloRange boxCut4,8 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 + 1.0*s_4,5 + 1.0*s_4,6 + 1.0*s_4,7 + 1.0*s_4,8 - 1.0*s_5,8) <= infinity
+IloRange boxCut4,9 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 + 1.0*s_4,5 + 1.0*s_4,6 + 1.0*s_4,7 + 1.0*s_4,8 + 1.0*s_4,9 - 1.0*s_5,9) <= infinity
+IloRange boxCut5,0 : 0.0 <= (1.0*s_5,0 - 1.0*s_6,0) <= infinity
+IloRange boxCut5,1 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 - 1.0*s_6,1) <= infinity
+IloRange boxCut5,2 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 - 1.0*s_6,2) <= infinity
+IloRange boxCut5,3 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 - 1.0*s_6,3) <= infinity
+IloRange boxCut5,4 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 - 1.0*s_6,4) <= infinity
+IloRange boxCut5,5 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 + 1.0*s_5,5 - 1.0*s_6,5) <= infinity
+IloRange boxCut5,6 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 + 1.0*s_5,5 + 1.0*s_5,6 - 1.0*s_6,6) <= infinity
+IloRange boxCut5,7 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 + 1.0*s_5,5 + 1.0*s_5,6 + 1.0*s_5,7 - 1.0*s_6,7) <= infinity
+IloRange boxCut5,8 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 + 1.0*s_5,5 + 1.0*s_5,6 + 1.0*s_5,7 + 1.0*s_5,8 - 1.0*s_6,8) <= infinity
+IloRange boxCut5,9 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 + 1.0*s_5,5 + 1.0*s_5,6 + 1.0*s_5,7 + 1.0*s_5,8 + 1.0*s_5,9 - 1.0*s_6,9) <= infinity
+IloRange bagCut_0,1 : 0.0 <= (1.0*n_0 - 1.0*n_1) <= infinity
+IloRange bagCut_1,2 : 0.0 <= (1.0*n_1 - 1.0*n_2) <= infinity
+IloRange bagCut_2,3 : 0.0 <= (1.0*n_2 - 1.0*n_3) <= infinity
+IloRange bagCut_3,4 : 0.0 <= (1.0*n_3 - 1.0*n_4) <= infinity
+IloRange bagCut_5,6 : 0.0 <= (1.0*n_5 - 1.0*n_6) <= infinity
+IloRange bagCut_6,7 : 0.0 <= (1.0*n_6 - 1.0*n_7) <= infinity
+IloRange bagCut_8,9 : 0.0 <= (1.0*n_8 - 1.0*n_9) <= infinity
+
+}
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Threads                                 1
+!!Thread UP
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms.
+Tried aggregator 1 time.
+MIP Presolve eliminated 4 rows and 0 columns.
+MIP Presolve modified 601 coefficients.
+Reduced MIP has 66 rows, 140 columns, and 500 nonzeros.
+Reduced MIP has 140 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.60 ticks)
+print n
+[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+将物品  [1, 8]  放进袋子  2  袋子种类为0              patten : [0, 1, 0, 0, 1, 0, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=1, id=0, x=30, y=0, z=0, lx=80, ly=230, lz=80}
+Position{type=4, id=0, x=110, y=0, z=0, lx=160, ly=210, lz=100}
+needToSolve=true needToAddCut=false
+将物品  [2]  放进袋子  3  袋子种类为0              patten : [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [12]  放进袋子  4  袋子种类为0              patten : [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=8, id=0, x=0, y=0, z=0, lx=280, ly=220, lz=70}
+needToSolve=true needToAddCut=false
+将物品  [3, 4, 11]  放进袋子  5  袋子种类为1              patten : [0, 0, 2, 0, 0, 0, 0, 1, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=10, y=10, z=110, lx=10, ly=10, lz=10}
+Position{type=7, id=0, x=20, y=20, z=10, lx=160, ly=250, lz=100}
+needToSolve=true needToAddCut=false
+将物品  [5, 9]  放进袋子  7  袋子种类为1              patten : [0, 0, 1, 0, 0, 1, 0, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=5, id=0, x=10, y=10, z=10, lx=180, ly=70, lz=100}
+needToSolve=true needToAddCut=false
+将物品  [0, 6, 7, 10]  放进袋子  9  袋子种类为2              patten : [1, 0, 1, 1, 0, 0, 1, 0, 0, 2]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=0, id=0, x=0, y=145, z=10, lx=60, ly=50, lz=40}
+Position{type=2, id=0, x=200, y=100, z=0, lx=10, ly=10, lz=10}
+Position{type=3, id=0, x=0, y=0, z=10, lx=200, ly=100, lz=140}
+Position{type=6, id=0, x=210, y=140, z=10, lx=150, ly=200, lz=150}
+needToSolve=true needToAddCut=false
+Found incumbent of value 6.100000 after 0.05 sec. (1.09 ticks)
+Probing time = 0.00 sec. (0.34 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 66 rows, 140 columns, and 500 nonzeros.
+Reduced MIP has 140 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.23 ticks)
+Probing time = 0.00 sec. (0.34 ticks)
+Clique table members: 373.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.02 sec. (0.27 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            6.1000        0.0000           100.00%
+      0     0        1.1117     3        6.1000        1.1117       48   81.77%
+print n
+[1.0, -0.0, 0.0, -0.0, -0.0, -0.0, 0.0, -0.0, 1.0, 0.0]
+将物品  [8]  放进袋子  0  袋子种类为0              patten : [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=4, id=0, x=0, y=0, z=0, lx=210, ly=100, lz=160}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 0, 1, 1, 1, 1, 2]
+装不完，装了11
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 11.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [7]  放进袋子  5  袋子种类为1              patten : [0, 0, 0, 1, 0, 0, 0, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=3, id=0, x=0, y=0, z=0, lx=200, ly=140, lz=100}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 0, 1, 1, 1, 1, 1, 2]
+装不完，装了10
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_1,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 10.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+      0     0        1.1551     3        6.1000       Cuts: 6       67   81.06%
+print n
+[-0.0, 1.3702435533506112E-13, 1.3702435533506112E-13, -0.0, -0.0, 0.0, 0.0, -0.0, 1.0, 1.0]
+将物品  [0, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 0, 5, 1, 0, 1, 1, 1, 1, 2]
+装不完，装了10
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 10.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+将物品  [1, 8]  放进袋子  9  袋子种类为2              patten : [0, 1, 0, 0, 1, 0, 0, 0, 0, 2]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=1, id=0, x=0, y=0, z=0, lx=80, ly=230, lz=80}
+Position{type=4, id=0, x=80, y=230, z=0, lx=210, ly=160, lz=100}
+needToSolve=true needToAddCut=false
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 0.0]
+将物品  [1, 7]  放进袋子  6  袋子种类为1              patten : [0, 1, 0, 1, 0, 0, 0, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=1, id=0, x=0, y=0, z=0, lx=80, ly=230, lz=80}
+Position{type=3, id=0, x=0, y=0, z=80, lx=200, ly=140, lz=100}
+needToSolve=true needToAddCut=false
+将物品  [0, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 0, 5, 0, 1, 1, 1, 1, 1, 2]
+装不完，装了9
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 9.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+      0     0        1.1633     3        6.1000      Cuts: 19       85   80.93%
+print n
+[-0.0, 0.0, 0.0, -0.0, -0.0, 1.0, 1.0, -0.0, 1.0, 1.0]
+将物品  [0, 2, 3, 4, 5, 6, 7]  放进袋子  6  袋子种类为1              patten : [1, 0, 5, 1, 0, 0, 0, 0, 0, 1]
+haha
+Position{type=3, id=7, x=0, y=0, z=0, lx=200, ly=140, lz=100}
+Position{type=0, id=0, x=200, y=0, z=0, lx=40, ly=60, lz=50}
+Position{type=2, id=2, x=200, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=210, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=220, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=230, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=200, y=70, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [8, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [0, 0, 0, 0, 1, 1, 1, 1, 1, 2]
+装不完，装了4
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_11,8 - 4.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+将物品  [1]  放进袋子  9  袋子种类为2              patten : [0, 1, 0, 0, 0, 0, 0, 0, 0, 2]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=1, id=0, x=0, y=0, z=0, lx=230, ly=80, lz=80}
+needToSolve=true needToAddCut=false
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 1.0, 1.0]
+将物品  [11]  放进袋子  5  袋子种类为1              patten : [0, 0, 0, 0, 0, 0, 0, 1, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=7, id=0, x=0, y=0, z=0, lx=100, ly=250, lz=160}
+needToSolve=true needToAddCut=false
+将物品  [0, 2, 3, 4, 5, 6, 7]  放进袋子  6  袋子种类为1              patten : [1, 0, 5, 1, 0, 0, 0, 0, 0, 1]
+needToSolve=false needToAddCut=false
+将物品  [1, 8, 10]  放进袋子  8  袋子种类为2              patten : [0, 1, 0, 0, 1, 0, 1, 0, 0, 2]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=1, id=0, x=0, y=0, z=0, lx=80, ly=230, lz=80}
+Position{type=4, id=0, x=150, y=190, z=0, lx=160, ly=100, lz=210}
+Position{type=6, id=0, x=80, y=0, z=0, lx=150, ly=150, lz=200}
+needToSolve=true needToAddCut=false
+将物品  [9, 12]  放进袋子  9  袋子种类为2              patten : [0, 0, 0, 0, 0, 1, 0, 0, 1, 2]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=5, id=0, x=0, y=0, z=0, lx=180, ly=100, lz=70}
+Position{type=8, id=0, x=180, y=0, z=0, lx=70, ly=280, lz=220}
+needToSolve=true needToAddCut=false
+*     0+    0                            3.4000        1.1633            65.79%
+      0     0        1.1667     3        3.4000      Cuts: 35      138   65.69%
+print n
+[1.0, 1.0, 1.0, -0.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0]
+将物品  [1, 9]  放进袋子  2  袋子种类为0              patten : [0, 1, 0, 0, 0, 1, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=1, id=0, x=20, y=75, z=0, lx=230, ly=80, lz=80}
+Position{type=5, id=0, x=0, y=0, z=0, lx=180, ly=70, lz=100}
+needToSolve=true needToAddCut=false
+将物品  [0, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 0, 5, 1, 1, 0, 1, 1, 1, 2]
+装不完，装了9
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 9.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+      0     0        1.2163     3        3.4000      Cuts: 33      224   64.23%
+      0     0        1.2187     3        3.4000      Cuts: 17      248   64.16%
+print n
+[1.0, 1.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [2, 8]  放进袋子  2  袋子种类为0              patten : [0, 0, 1, 0, 1, 0, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=4, id=0, x=10, y=10, z=10, lx=160, ly=210, lz=100}
+needToSolve=true needToAddCut=false
+将物品  [1]  放进袋子  5  袋子种类为1              patten : [0, 1, 0, 0, 0, 0, 0, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=1, id=0, x=0, y=0, z=0, lx=80, ly=230, lz=80}
+needToSolve=true needToAddCut=false
+将物品  [0, 3, 4, 5, 6, 7, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 0, 4, 1, 0, 1, 1, 1, 1, 2]
+装不完，装了9
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 9.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+      0     0        1.2232     3        3.4000      Cuts: 27      320   64.02%
+      0     0        1.2264     3        3.4000       Cuts: 8      347   63.93%
+print n
+[-5.259062118731651E-13, 3.113735457081646E-13, 3.113735457081646E-13, -0.0, -0.0, 0.0, 0.0, -0.0, 1.0, 1.0]
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 1, 1, 1, 0, 2]
+装不完，装了10
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 10.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+将物品  [12]  放进袋子  9  袋子种类为2              patten : [0, 0, 0, 0, 0, 0, 0, 0, 1, 2]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=8, id=0, x=0, y=0, z=0, lx=220, ly=280, lz=70}
+needToSolve=true needToAddCut=false
+print n
+[0.0, 1.021623795542335E-13, 1.021623795542335E-13, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [11]  放进袋子  5  袋子种类为1              patten : [0, 0, 0, 0, 0, 0, 0, 1, 0, 1]
+needToSolve=false needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 1, 1, 0, 1, 2]
+装不完，装了10
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 10.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+      0     0        1.2333     3        3.4000       Cuts: 9      363   63.73%
+print n
+[0.0, 0.0, 0.0, -0.0, -0.0, 1.8884962136831162E-13, 1.8884962136831162E-13, -0.0, 0.9999999999998045, 1.0]
+将物品  [0, 1, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [1, 1, 0, 1, 1, 1, 1, 1, 0, 2]
+装不完，装了6
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_8,8 - 6.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+将物品  [2, 3, 4, 5, 6, 12]  放进袋子  9  袋子种类为2              patten : [0, 0, 5, 0, 0, 0, 0, 0, 1, 2]
+haha
+Position{type=8, id=12, x=0, y=0, z=0, lx=280, ly=220, lz=70}
+Position{type=2, id=2, x=280, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=280, y=10, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=280, y=20, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=280, y=30, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=280, y=40, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+print n
+[-4.984886948037711E-13, 5.10974631402811E-13, 5.10974631402811E-13, 0.0, 0.0, 1.0, 0.0, 0.0, 0.999999999999834, 0.0]
+将物品  [10]  放进袋子  5  袋子种类为1              patten : [0, 0, 0, 0, 0, 0, 1, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=6, id=0, x=0, y=0, z=0, lx=200, ly=150, lz=150}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 1, 0, 1, 1, 2]
+装不完，装了10
+addNoGoodCut:  (1.0*s_12,8 + 1.0*s_11,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 - 10.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+      0     0        1.2356     3        3.4000      Cuts: 21      387   63.66%
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [1, 9]  放进袋子  0  袋子种类为0              patten : [0, 1, 0, 0, 0, 1, 0, 0, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [0, 2, 3, 4, 5, 6, 7, 8, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 0, 5, 1, 1, 0, 1, 1, 1, 2]
+addNoGoodCut:  (1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 + 1.0*s_8,8 + 1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_12,8 - 10.0*n_8) <= 0
+needToSolve=false needToAddCut=true
+      0     0        1.2401     3        3.4000      Cuts: 17      425   63.53%
+print n
+[1.0, -0.0, 0.0, -0.0, -0.0, 0.0, 0.0, -0.0, 1.0, 0.0]
+将物品  [12]  放进袋子  0  袋子种类为0              patten : [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+needToSolve=false needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 1, 1, 1, 0, 2]
+addNoGoodCut:  (1.0*s_0,8 + 1.0*s_1,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_10,8 + 1.0*s_11,8 - 11.0*n_8) <= 0
+needToSolve=false needToAddCut=true
+      0     0        1.2450     3        3.4000      Cuts: 11      439   63.38%
+print n
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+将物品  [12]  放进袋子  0  袋子种类为0              patten : [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+needToSolve=false needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 1, 1, 1, 0, 2]
+addNoGoodCut:  (1.0*s_0,8 + 1.0*s_1,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_10,8 + 1.0*s_11,8 - 11.0*n_8) <= 0
+needToSolve=false needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [8]  放进袋子  0  袋子种类为0              patten : [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 0, 1, 1, 1, 1, 2]
+addNoGoodCut:  (1.0*s_0,8 + 1.0*s_1,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 + 1.0*s_9,8 + 1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_12,8 - 11.0*n_8) <= 0
+needToSolve=false needToAddCut=true
+      0     0        1.2532     3        3.4000       Cuts: 9      468   63.14%
+print n
+[-0.0, -0.0, 1.1650285036555214E-12, -0.0, -0.0, -0.0, -5.8569516393886E-13, -0.0, 1.0, 1.0]
+将物品  [0, 2, 3, 4, 5, 6, 7]  放进袋子  8  袋子种类为2              patten : [1, 0, 5, 1, 0, 0, 0, 0, 0, 2]
+haha
+Position{type=3, id=7, x=0, y=0, z=0, lx=200, ly=140, lz=100}
+Position{type=0, id=0, x=200, y=0, z=0, lx=40, ly=60, lz=50}
+Position{type=2, id=2, x=200, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=210, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=220, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=230, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=200, y=70, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [1, 8, 9, 10, 11, 12]  放进袋子  9  袋子种类为2              patten : [0, 1, 0, 0, 1, 1, 1, 1, 1, 2]
+装不完，装了4
+addNoGoodCut:  (1.0*s_10,9 + 1.0*s_12,9 + 1.0*s_1,9 + 1.0*s_9,9 + 1.0*s_11,9 - 4.0*n_9) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 0.0, 3.6413388573376957E-13, 0.0, 0.0, -1.2490009027028853E-13, -1.2844228773677938E-13, 0.0, 1.0, 0.0]
+将物品  [12]  放进袋子  0  袋子种类为0              patten : [0, 0, 0, 0, 0, 0, 0, 0, 1, 0]
+needToSolve=false needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 1, 1, 1, 0, 2]
+addNoGoodCut:  (1.0*s_0,8 + 1.0*s_1,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_10,8 + 1.0*s_11,8 - 11.0*n_8) <= 0
+needToSolve=false needToAddCut=true
+      0     0        1.2638     3        3.4000      Cuts: 23      557   62.83%
+      0     0        1.2660     3        3.4000      Cuts: 26      592   62.76%
+print n
+[-0.0, -0.0, -0.0, 0.0, 0.0, 1.0, -0.0, -0.0, 1.0, 0.0]
+将物品  [0, 1, 2, 9]  放进袋子  5  袋子种类为1              patten : [1, 1, 1, 0, 0, 1, 0, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=0, id=0, x=10, y=0, z=0, lx=50, ly=60, lz=40}
+Position{type=1, id=0, x=110, y=0, z=90, lx=80, ly=230, lz=80}
+Position{type=2, id=0, x=0, y=220, z=170, lx=10, ly=10, lz=10}
+Position{type=5, id=0, x=190, y=120, z=0, lx=70, ly=100, lz=180}
+needToSolve=true needToAddCut=false
+将物品  [3, 4, 5, 6, 7, 8, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [0, 0, 4, 1, 1, 0, 1, 1, 1, 2]
+装不完，装了7
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 7.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[0.0, 3.8657348926877744E-13, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 1, 9, 10]  放进袋子  5  袋子种类为1              patten : [1, 1, 0, 0, 0, 1, 1, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=0, id=0, x=0, y=0, z=0, lx=50, ly=60, lz=40}
+Position{type=1, id=0, x=0, y=0, z=70, lx=80, ly=230, lz=80}
+Position{type=5, id=0, x=110, y=190, z=40, lx=180, ly=70, lz=100}
+Position{type=6, id=0, x=90, y=0, z=0, lx=200, ly=150, lz=150}
+needToSolve=true needToAddCut=false
+将物品  [2, 3, 4, 5, 6, 7, 8, 11, 12]  放进袋子  8  袋子种类为2              patten : [0, 0, 5, 1, 1, 0, 0, 1, 1, 2]
+装不完，装了8
+addNoGoodCut:  (1.0*s_12,8 + 1.0*s_11,8 + 1.0*s_8,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 - 8.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+      0     0        1.2688     3        3.4000       Cuts: 8      617   62.68%
+print n
+[0.0, 0.0, -0.0, 0.0, 0.0, 1.0, 1.0, -0.0, 1.0, -0.0]
+将物品  [12]  放进袋子  6  袋子种类为1              patten : [0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=8, id=0, x=0, y=0, z=0, lx=280, ly=220, lz=70}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 1, 1, 1, 0, 2]
+addNoGoodCut:  (1.0*s_0,8 + 1.0*s_1,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_10,8 + 1.0*s_11,8 - 11.0*n_8) <= 0
+needToSolve=false needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [11]  放进袋子  0  袋子种类为0              patten : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=7, id=0, x=0, y=0, z=0, lx=250, ly=160, lz=100}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 1, 1, 0, 1, 2]
+addNoGoodCut:  (1.0*s_0,8 + 1.0*s_1,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_10,8 + 1.0*s_12,8 - 11.0*n_8) <= 0
+needToSolve=false needToAddCut=true
+      0     0        1.2721     3        3.4000      Cuts: 26      653   62.59%
+print n
+[1.0, 1.0, 0.0, 0.0, 0.0, 0.0, -0.0, -0.0, 1.0, 0.0]
+将物品  [2, 3, 4, 12]  放进袋子  0  袋子种类为0              patten : [0, 0, 3, 0, 0, 0, 0, 0, 1, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=280, y=10, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=280, y=240, z=10, lx=10, ly=10, lz=10}
+Position{type=8, id=0, x=0, y=20, z=10, lx=280, ly=220, lz=70}
+needToSolve=true needToAddCut=false
+将物品  [5]  放进袋子  1  袋子种类为0              patten : [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [0, 1, 6, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [1, 1, 1, 1, 1, 1, 1, 1, 0, 2]
+装不完，装了7
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_6,8 + 1.0*s_8,8 - 7.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [8]  放进袋子  0  袋子种类为0              patten : [0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 0, 1, 1, 1, 1, 2]
+addNoGoodCut:  (1.0*s_0,8 + 1.0*s_1,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 + 1.0*s_9,8 + 1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_12,8 - 11.0*n_8) <= 0
+needToSolve=false needToAddCut=true
+      0     0        1.2771     3        3.4000      Cuts: 29      676   62.44%
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 1.2715867356663446E-13, 0.0, 1.0, 1.0]
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 11]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 0, 1, 1, 0, 2]
+装不完，装了10
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 10.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+将物品  [9, 12]  放进袋子  9  袋子种类为2              patten : [0, 0, 0, 0, 0, 1, 0, 0, 1, 2]
+needToSolve=false needToAddCut=false
+      0     0        1.2771     3        3.4000      Cuts: 15      686   62.44%
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, -0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [1, 2, 3, 4, 5, 9]  放进袋子  0  袋子种类为0              patten : [0, 1, 4, 0, 0, 1, 0, 0, 0, 0]
+haha
+Position{type=1, id=1, x=0, y=0, z=0, lx=230, ly=80, lz=80}
+Position{type=5, id=9, x=0, y=80, z=0, lx=180, ly=100, lz=70}
+Position{type=2, id=2, x=180, y=80, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=190, y=80, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=200, y=80, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=210, y=80, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [0, 6, 7, 8, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 0, 1, 1, 1, 0, 1, 1, 1, 2]
+装不完，装了5
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_0,8 + 1.0*s_6,8 + 1.0*s_11,8 - 5.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [1, 2, 3, 4, 5, 9]  放进袋子  0  袋子种类为0              patten : [0, 1, 4, 0, 0, 1, 0, 0, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [6]  放进袋子  1  袋子种类为0              patten : [0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [0, 7, 8, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 0, 0, 1, 1, 0, 1, 1, 1, 2]
+装不完，装了4
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_0,8 + 1.0*s_11,8 - 4.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+      0     0        1.2776     3        3.4000       Cuts: 7      704   62.42%
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0]  放进袋子  0  袋子种类为0              patten : [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=0, id=0, x=0, y=0, z=0, lx=40, ly=60, lz=50}
+needToSolve=true needToAddCut=false
+将物品  [2, 3, 4, 12]  放进袋子  5  袋子种类为1              patten : [0, 0, 3, 0, 0, 0, 0, 0, 1, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=10, y=10, z=10, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=20, y=20, z=20, lx=10, ly=10, lz=10}
+Position{type=8, id=0, x=120, y=30, z=30, lx=220, ly=280, lz=70}
+needToSolve=true needToAddCut=false
+将物品  [1, 5, 6, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [0, 1, 2, 1, 1, 1, 1, 1, 0, 2]
+装不完，装了6
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 6.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 1]  放进袋子  0  袋子种类为0              patten : [1, 1, 0, 0, 0, 0, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=0, id=0, x=80, y=0, z=0, lx=50, ly=40, lz=60}
+Position{type=1, id=0, x=0, y=0, z=0, lx=80, ly=230, lz=80}
+needToSolve=true needToAddCut=false
+将物品  [2, 3, 4, 9]  放进袋子  5  袋子种类为1              patten : [0, 0, 3, 0, 0, 1, 0, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=190, y=300, z=10, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=330, y=10, z=20, lx=10, ly=10, lz=10}
+Position{type=5, id=0, x=10, y=20, z=30, lx=180, ly=100, lz=70}
+needToSolve=true needToAddCut=false
+将物品  [5, 6, 7, 8, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [0, 0, 2, 1, 1, 0, 1, 1, 1, 2]
+装不完，装了5
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 5.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+      0     0        1.2793     3        3.4000      Cuts: 26      743   62.37%
+print n
+[-0.0, -0.0, 0.0, 0.0, 0.0, 1.0, -0.0, 0.0, 1.0, 0.0]
+将物品  [12]  放进袋子  5  袋子种类为1              patten : [0, 0, 0, 0, 0, 0, 0, 0, 1, 1]
+needToSolve=false needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 1, 1, 1, 0, 2]
+addNoGoodCut:  (1.0*s_0,8 + 1.0*s_1,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_10,8 + 1.0*s_11,8 - 11.0*n_8) <= 0
+needToSolve=false needToAddCut=true
+      0     0        1.2794     3        3.4000      Cuts: 31      761   62.37%
+print n
+[1.0, 1.0, 0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 1.0, 0.0]
+将物品  [0]  放进袋子  0  袋子种类为0              patten : [1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [11]  放进袋子  1  袋子种类为0              patten : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 5, 1, 1, 1, 1, 0, 1, 2]
+装不完，装了8
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 8.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 2, 3, 4, 8]  放进袋子  0  袋子种类为0              patten : [1, 0, 3, 0, 1, 0, 0, 0, 0, 0]
+haha
+Position{type=4, id=8, x=0, y=0, z=0, lx=210, ly=160, lz=100}
+Position{type=0, id=0, x=210, y=0, z=0, lx=40, ly=60, lz=50}
+Position{type=2, id=2, x=210, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=220, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=230, y=60, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [11]  放进袋子  5  袋子种类为1              patten : [0, 0, 0, 0, 0, 0, 0, 1, 0, 1]
+needToSolve=false needToAddCut=false
+将物品  [1, 5, 6, 7, 9, 10, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 2, 1, 0, 1, 1, 0, 1, 2]
+haha
+Position{type=6, id=10, x=0, y=0, z=0, lx=200, ly=150, lz=150}
+Position{type=8, id=12, x=0, y=0, z=150, lx=280, ly=220, lz=70}
+Position{type=3, id=7, x=0, y=150, z=0, lx=200, ly=100, lz=140}
+Position{type=1, id=1, x=200, y=0, z=0, lx=80, ly=230, lz=80}
+Position{type=5, id=9, x=200, y=0, z=80, lx=100, ly=180, lz=70}
+Position{type=2, id=5, x=280, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=290, y=0, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+*     0+    0                            2.1000        1.2794            39.07%
+print n
+[-0.0, -0.0, -0.0, 0.0, -0.0, 1.0, 0.0, 0.0, 1.0, -0.0]
+将物品  [2, 8]  放进袋子  5  袋子种类为1              patten : [0, 0, 1, 0, 1, 0, 0, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=4, id=0, x=10, y=10, z=10, lx=100, ly=210, lz=160}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 3, 4, 5, 6, 7, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 4, 1, 0, 1, 1, 1, 1, 2]
+装不完，装了10
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 10.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[-0.0, -0.0, -0.0, 0.0, -0.0, 1.0, 1.129199967631819E-13, 0.0, 1.0, -0.0]
+将物品  [2, 8, 9]  放进袋子  5  袋子种类为1              patten : [0, 0, 1, 0, 1, 1, 0, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=105, z=0, lx=10, ly=10, lz=10}
+Position{type=4, id=0, x=150, y=0, z=30, lx=100, ly=210, lz=160}
+Position{type=5, id=0, x=10, y=0, z=10, lx=70, ly=100, lz=180}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 3, 4, 5, 6, 7, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 4, 1, 0, 0, 1, 1, 1, 2]
+装不完，装了9
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_0,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 9.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[-0.0, -0.0, -0.0, 0.0, -0.0, 1.0, 1.129199967631819E-13, 0.0, 1.0, -0.0]
+将物品  [2, 8, 10]  放进袋子  5  袋子种类为1              patten : [0, 0, 1, 0, 1, 0, 1, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=4, id=0, x=160, y=20, z=20, lx=100, ly=210, lz=160}
+Position{type=6, id=0, x=10, y=10, z=10, lx=150, ly=200, lz=150}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 3, 4, 5, 6, 7, 9, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 4, 1, 0, 1, 0, 1, 1, 2]
+haha
+Position{type=8, id=12, x=0, y=0, z=0, lx=280, ly=220, lz=70}
+Position{type=7, id=11, x=0, y=220, z=0, lx=250, ly=100, lz=160}
+Position{type=3, id=7, x=0, y=0, z=70, lx=200, ly=140, lz=100}
+Position{type=1, id=1, x=0, y=140, z=70, lx=230, ly=80, lz=80}
+Position{type=5, id=9, x=230, y=0, z=70, lx=70, ly=180, lz=100}
+Position{type=0, id=0, x=230, y=180, z=70, lx=60, ly=40, lz=50}
+Position{type=2, id=3, x=280, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=290, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=280, y=10, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=290, y=10, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+*     0+    0                            1.7000        1.2794            24.74%
+print n
+[1.0, -0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 2, 9, 11]  放进袋子  0  袋子种类为0              patten : [1, 0, 1, 0, 0, 1, 0, 1, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=0, id=0, x=10, y=10, z=10, lx=50, ly=40, lz=60}
+Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=5, id=0, x=90, y=0, z=0, lx=180, ly=70, lz=100}
+Position{type=7, id=0, x=20, y=70, z=0, lx=250, ly=160, lz=100}
+needToSolve=true needToAddCut=false
+将物品  [1, 3, 4, 5, 6, 7, 8, 10, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 4, 1, 1, 0, 1, 0, 1, 2]
+装不完，装了7
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 7.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, -0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 7, 9]  放进袋子  0  袋子种类为0              patten : [1, 0, 0, 1, 0, 1, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=0, id=0, x=0, y=0, z=0, lx=50, ly=40, lz=60}
+Position{type=3, id=0, x=100, y=0, z=30, lx=140, ly=200, lz=100}
+Position{type=5, id=0, x=0, y=0, z=60, lx=100, ly=180, lz=70}
+needToSolve=true needToAddCut=false
+将物品  [1, 2, 3, 4, 5, 6, 8, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 5, 0, 1, 0, 1, 1, 1, 2]
+装不完，装了8
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_1,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 8.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, -0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 2, 7, 9]  放进袋子  0  袋子种类为0              patten : [1, 0, 1, 1, 0, 1, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=0, id=0, x=10, y=10, z=10, lx=50, ly=40, lz=60}
+Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=3, id=0, x=130, y=10, z=0, lx=140, ly=200, lz=100}
+Position{type=5, id=0, x=10, y=50, z=10, lx=100, ly=180, lz=70}
+needToSolve=true needToAddCut=false
+将物品  [1, 3, 4, 5, 6, 8, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 4, 0, 1, 0, 1, 1, 1, 2]
+装不完，装了7
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_1,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 7.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.000000000000125, -0.0, -0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 1.0, -0.0]
+将物品  [0, 2, 3, 4, 11]  放进袋子  0  袋子种类为0              patten : [1, 0, 3, 0, 0, 0, 0, 1, 0, 0]
+haha
+Position{type=7, id=11, x=0, y=0, z=0, lx=250, ly=160, lz=100}
+Position{type=0, id=0, x=0, y=160, z=0, lx=60, ly=40, lz=50}
+Position{type=2, id=2, x=60, y=160, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=70, y=160, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=80, y=160, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [1, 5, 6, 7, 8, 9, 10, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 2, 1, 1, 1, 1, 0, 1, 2]
+装不完，装了7
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_9,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 7.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0000000000001252, -0.0, -0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 1.0, -0.0]
+将物品  [0, 2, 3, 4, 9, 11]  放进袋子  0  袋子种类为0              patten : [1, 0, 3, 0, 0, 1, 0, 1, 0, 0]
+haha
+Position{type=7, id=11, x=0, y=0, z=0, lx=250, ly=160, lz=100}
+Position{type=5, id=9, x=0, y=160, z=0, lx=180, ly=70, lz=100}
+Position{type=0, id=0, x=180, y=160, z=0, lx=60, ly=50, lz=40}
+Position{type=2, id=2, x=240, y=160, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=240, y=170, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=240, y=180, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [1, 5, 6, 7, 8, 10, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 2, 1, 1, 0, 1, 0, 1, 2]
+装不完，装了5
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 5.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.000000000000125, -0.0, -0.0, -0.0, 0.0, 0.0, -0.0, 0.0, 1.0, -0.0]
+将物品  [0, 2, 3, 4, 7, 9]  放进袋子  0  袋子种类为0              patten : [1, 0, 3, 1, 0, 1, 0, 0, 0, 0]
+haha
+Position{type=3, id=7, x=0, y=0, z=0, lx=200, ly=140, lz=100}
+Position{type=5, id=9, x=0, y=140, z=0, lx=180, ly=70, lz=100}
+Position{type=0, id=0, x=180, y=140, z=0, lx=40, ly=60, lz=50}
+Position{type=2, id=2, x=200, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=210, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=200, y=10, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [1, 5, 6, 8, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 2, 0, 1, 0, 1, 1, 1, 2]
+装不完，装了5
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_1,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 5.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+      0     2        1.2794    51        1.7000        1.2794      761   24.74%
+Elapsed time = 8.39 sec. (53.39 ticks, tree = 0.01 MB, solutions = 4)
+print n
+[1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, -0.0]
+将物品  [2, 3, 4, 5, 7, 8]  放进袋子  0  袋子种类为0              patten : [0, 0, 4, 1, 1, 0, 0, 0, 0, 0]
+装不完，装了5
+addNoGoodCut:  (1.0*s_8,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_4,0 + 1.0*s_5,0 + 1.0*s_7,0 - 5.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 1, 6, 12]  放进袋子  1  袋子种类为0              patten : [1, 1, 1, 0, 0, 0, 0, 0, 1, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_0,1 + 1.0*s_1,1 + 1.0*s_6,1 + 1.0*s_12,1 - 3.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [9, 10, 11]  放进袋子  5  袋子种类为1              patten : [0, 0, 0, 0, 0, 1, 1, 1, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_9,5 + 1.0*s_10,5 + 1.0*s_11,5 - 2.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, -0.0, -0.0]
+将物品  [7, 8]  放进袋子  0  袋子种类为0              patten : [0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_7,0 + 1.0*s_8,0 - 1.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 2, 3, 4, 9, 12]  放进袋子  1  袋子种类为0              patten : [1, 0, 3, 0, 0, 1, 0, 0, 1, 0]
+装不完，装了5
+addNoGoodCut:  (1.0*s_12,1 + 1.0*s_0,1 + 1.0*s_2,1 + 1.0*s_3,1 + 1.0*s_4,1 + 1.0*s_9,1 - 5.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [1, 5, 6, 10, 11]  放进袋子  5  袋子种类为1              patten : [0, 1, 2, 0, 0, 0, 1, 1, 0, 1]
+装不完，装了3
+addNoGoodCut:  (1.0*s_10,5 + 1.0*s_5,5 + 1.0*s_6,5 + 1.0*s_11,5 - 3.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [10]  放进袋子  0  袋子种类为0              patten : [0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=6, id=0, x=0, y=0, z=0, lx=200, ly=150, lz=150}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 1, 0, 1, 1, 2]
+addNoGoodCut:  (1.0*s_0,8 + 1.0*s_1,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_11,8 + 1.0*s_12,8 - 11.0*n_8) <= 0
+needToSolve=false needToAddCut=true
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 10]  放进袋子  0  袋子种类为0              patten : [1, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_0,0 + 1.0*s_10,0 - 1.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 5, 1, 1, 1, 0, 1, 1, 2]
+装不完，装了9
+addNoGoodCut:  (1.0*s_12,8 + 1.0*s_11,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 - 9.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [9, 10]  放进袋子  0  袋子种类为0              patten : [0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_9,0 + 1.0*s_10,0 - 1.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 5, 1, 1, 0, 0, 1, 1, 2]
+装不完，装了10
+addNoGoodCut:  (1.0*s_12,8 + 1.0*s_11,8 + 1.0*s_8,8 + 1.0*s_1,8 + 1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 - 10.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [2, 10]  放进袋子  0  袋子种类为0              patten : [0, 0, 1, 0, 0, 0, 1, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=6, id=0, x=20, y=30, z=0, lx=200, ly=150, lz=150}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 3, 4, 5, 6, 7, 8, 9, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 4, 1, 1, 1, 0, 1, 1, 2]
+装不完，装了9
+addNoGoodCut:  (1.0*s_12,8 + 1.0*s_11,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 - 9.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [2, 3, 10]  放进袋子  0  袋子种类为0              patten : [0, 0, 2, 0, 0, 0, 1, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=0, y=10, z=150, lx=10, ly=10, lz=10}
+Position{type=6, id=0, x=10, y=20, z=0, lx=200, ly=150, lz=150}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 4, 5, 6, 7, 8, 9, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 3, 1, 1, 1, 0, 1, 1, 2]
+装不完，装了8
+addNoGoodCut:  (1.0*s_12,8 + 1.0*s_11,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 - 8.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [2, 3, 4, 10]  放进袋子  0  袋子种类为0              patten : [0, 0, 3, 0, 0, 0, 1, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=2, id=0, x=0, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=200, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=200, y=160, z=10, lx=10, ly=10, lz=10}
+Position{type=6, id=0, x=0, y=10, z=10, lx=200, ly=150, lz=150}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 5, 6, 7, 8, 9, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 2, 1, 1, 1, 0, 1, 1, 2]
+装不完，装了7
+addNoGoodCut:  (1.0*s_12,8 + 1.0*s_11,8 + 1.0*s_8,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 - 7.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [2, 3, 4, 5, 10]  放进袋子  0  袋子种类为0              patten : [0, 0, 4, 0, 0, 0, 1, 0, 0, 0]
+haha
+Position{type=6, id=10, x=0, y=0, z=0, lx=200, ly=150, lz=150}
+Position{type=2, id=2, x=200, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=200, y=10, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=200, y=20, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=200, y=30, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 6, 7, 8, 9, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 1, 1, 1, 1, 0, 1, 1, 2]
+装不完，装了7
+addNoGoodCut:  (1.0*s_12,8 + 1.0*s_11,8 + 1.0*s_8,8 + 1.0*s_1,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_6,8 + 1.0*s_7,8 - 7.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [1, 2, 3, 4, 5, 10]  放进袋子  0  袋子种类为0              patten : [0, 1, 4, 0, 0, 0, 1, 0, 0, 0]
+装不完，装了5
+addNoGoodCut:  (1.0*s_10,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_4,0 + 1.0*s_5,0 + 1.0*s_1,0 - 5.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 6, 7, 8, 9, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 0, 1, 1, 1, 1, 0, 1, 1, 2]
+haha
+Position{type=8, id=12, x=0, y=0, z=0, lx=280, ly=220, lz=70}
+Position{type=7, id=11, x=0, y=220, z=0, lx=250, ly=100, lz=160}
+Position{type=4, id=8, x=0, y=0, z=70, lx=160, ly=210, lz=100}
+Position{type=3, id=7, x=160, y=0, z=70, lx=140, ly=200, lz=100}
+Position{type=5, id=9, x=250, y=220, z=0, lx=70, ly=100, lz=180}
+Position{type=0, id=0, x=280, y=0, z=0, lx=40, ly=60, lz=50}
+Position{type=2, id=6, x=280, y=60, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [2, 3, 4, 5, 6, 10]  放进袋子  0  袋子种类为0              patten : [0, 0, 5, 0, 0, 0, 1, 0, 0, 0]
+haha
+Position{type=6, id=10, x=0, y=0, z=0, lx=200, ly=150, lz=150}
+Position{type=2, id=2, x=200, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=200, y=10, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=200, y=20, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=200, y=30, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=200, y=40, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 7, 8, 9, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 1, 0, 1, 1, 1, 0, 1, 1, 2]
+装不完，装了6
+addNoGoodCut:  (1.0*s_12,8 + 1.0*s_11,8 + 1.0*s_8,8 + 1.0*s_1,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_7,8 - 6.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+将物品  [0, 2, 3, 4, 5, 6, 7, 11, 12]  放进袋子  5  袋子种类为1              patten : [1, 0, 5, 1, 0, 0, 0, 1, 1, 1]
+装不完，装了7
+addNoGoodCut:  (1.0*s_12,5 + 1.0*s_0,5 + 1.0*s_2,5 + 1.0*s_3,5 + 1.0*s_4,5 + 1.0*s_5,5 + 1.0*s_6,5 + 1.0*s_11,5 - 7.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+将物品  [1, 8, 9, 10]  放进袋子  6  袋子种类为1              patten : [0, 1, 0, 0, 1, 1, 1, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_1,6 + 1.0*s_8,6 + 1.0*s_9,6 + 1.0*s_10,6 - 3.0*n_6) <= 0
+needToSolve=true needToAddCut=true
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+将物品  [0, 2, 3, 4, 5, 6, 7, 8, 12]  放进袋子  5  袋子种类为1              patten : [1, 0, 5, 1, 1, 0, 0, 0, 1, 1]
+装不完，装了7
+addNoGoodCut:  (1.0*s_12,5 + 1.0*s_0,5 + 1.0*s_2,5 + 1.0*s_3,5 + 1.0*s_4,5 + 1.0*s_5,5 + 1.0*s_6,5 + 1.0*s_8,5 - 7.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+将物品  [1, 9, 10, 11]  放进袋子  6  袋子种类为1              patten : [0, 1, 0, 0, 0, 1, 1, 1, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_1,6 + 1.0*s_9,6 + 1.0*s_10,6 + 1.0*s_11,6 - 3.0*n_6) <= 0
+needToSolve=true needToAddCut=true
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+将物品  [0, 1, 2, 3, 4, 5, 8, 9, 12]  放进袋子  5  袋子种类为1              patten : [1, 1, 4, 0, 1, 1, 0, 0, 1, 1]
+装不完，装了7
+addNoGoodCut:  (1.0*s_12,5 + 1.0*s_1,5 + 1.0*s_0,5 + 1.0*s_2,5 + 1.0*s_3,5 + 1.0*s_4,5 + 1.0*s_5,5 + 1.0*s_8,5 - 7.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+将物品  [6, 7, 10, 11]  放进袋子  6  袋子种类为1              patten : [0, 0, 1, 1, 0, 0, 1, 1, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_6,6 + 1.0*s_7,6 + 1.0*s_10,6 + 1.0*s_11,6 - 3.0*n_6) <= 0
+needToSolve=true needToAddCut=true
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+将物品  [0, 1, 2, 3, 4, 5, 9, 11, 12]  放进袋子  5  袋子种类为1              patten : [1, 1, 4, 0, 0, 1, 0, 1, 1, 1]
+装不完，装了7
+addNoGoodCut:  (1.0*s_12,5 + 1.0*s_1,5 + 1.0*s_0,5 + 1.0*s_2,5 + 1.0*s_3,5 + 1.0*s_4,5 + 1.0*s_5,5 + 1.0*s_11,5 - 7.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+将物品  [6, 7, 8, 10]  放进袋子  6  袋子种类为1              patten : [0, 0, 1, 1, 1, 0, 1, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_6,6 + 1.0*s_7,6 + 1.0*s_8,6 + 1.0*s_10,6 - 3.0*n_6) <= 0
+needToSolve=true needToAddCut=true
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+将物品  [1, 2, 3, 4, 5, 6, 9, 11, 12]  放进袋子  5  袋子种类为1              patten : [0, 1, 5, 0, 0, 1, 0, 1, 1, 1]
+装不完，装了7
+addNoGoodCut:  (1.0*s_12,5 + 1.0*s_1,5 + 1.0*s_2,5 + 1.0*s_3,5 + 1.0*s_4,5 + 1.0*s_5,5 + 1.0*s_6,5 + 1.0*s_11,5 - 7.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 7, 8, 10]  放进袋子  6  袋子种类为1              patten : [1, 0, 0, 1, 1, 0, 1, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_0,6 + 1.0*s_7,6 + 1.0*s_8,6 + 1.0*s_10,6 - 3.0*n_6) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, -0.0, -0.0, 0.0]
+将物品  [2, 3, 4, 5, 6, 9, 12]  放进袋子  0  袋子种类为0              patten : [0, 0, 5, 0, 0, 1, 0, 0, 1, 0]
+装不完，装了6
+addNoGoodCut:  (1.0*s_12,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_4,0 + 1.0*s_5,0 + 1.0*s_6,0 + 1.0*s_9,0 - 6.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 1, 10]  放进袋子  1  袋子种类为0              patten : [1, 1, 0, 0, 0, 0, 1, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_0,1 + 1.0*s_1,1 + 1.0*s_10,1 - 2.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [11]  放进袋子  2  袋子种类为0              patten : [0, 0, 0, 0, 0, 0, 0, 1, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [7, 8]  放进袋子  3  袋子种类为0              patten : [0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+addNoGoodCut:  (1.0*s_7,3 + 1.0*s_8,3 - 1.0*n_3) <= 0
+needToSolve=false needToAddCut=true
+print n
+[1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, -0.0, 0.0]
+将物品  [2, 3, 4, 5, 9, 12]  放进袋子  0  袋子种类为0              patten : [0, 0, 4, 0, 0, 1, 0, 0, 1, 0]
+装不完，装了5
+addNoGoodCut:  (1.0*s_12,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_4,0 + 1.0*s_5,0 + 1.0*s_9,0 - 5.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 7, 8]  放进袋子  1  袋子种类为0              patten : [1, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_0,1 + 1.0*s_7,1 + 1.0*s_8,1 - 2.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [1, 6, 11]  放进袋子  2  袋子种类为0              patten : [0, 1, 1, 0, 0, 0, 0, 1, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_1,2 + 1.0*s_6,2 + 1.0*s_11,2 - 2.0*n_2) <= 0
+needToSolve=true needToAddCut=true
+将物品  [10]  放进袋子  3  袋子种类为0              patten : [0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+needToSolve=false needToAddCut=false
+print n
+[1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, -0.0, 0.0]
+将物品  [1, 2, 3, 4, 5, 12]  放进袋子  0  袋子种类为0              patten : [0, 1, 4, 0, 0, 0, 0, 0, 1, 0]
+装不完，装了5
+addNoGoodCut:  (1.0*s_12,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_4,0 + 1.0*s_5,0 + 1.0*s_1,0 - 5.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [7, 8]  放进袋子  1  袋子种类为0              patten : [0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+addNoGoodCut:  (1.0*s_7,1 + 1.0*s_8,1 - 1.0*n_1) <= 0
+needToSolve=false needToAddCut=true
+将物品  [0, 6, 11]  放进袋子  2  袋子种类为0              patten : [1, 0, 1, 0, 0, 0, 0, 1, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=0, id=0, x=0, y=10, z=10, lx=60, ly=50, lz=40}
+Position{type=2, id=0, x=250, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=7, id=0, x=0, y=60, z=10, lx=250, ly=160, lz=100}
+needToSolve=true needToAddCut=false
+将物品  [9, 10]  放进袋子  3  袋子种类为0              patten : [0, 0, 0, 0, 0, 1, 1, 0, 0, 0]
+addNoGoodCut:  (1.0*s_9,3 + 1.0*s_10,3 - 1.0*n_3) <= 0
+needToSolve=false needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 1, 2, 3, 4, 5, 6, 11]  放进袋子  0  袋子种类为0              patten : [1, 1, 5, 0, 0, 0, 0, 1, 0, 0]
+装不完，装了7
+addNoGoodCut:  (1.0*s_11,0 + 1.0*s_0,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_4,0 + 1.0*s_5,0 + 1.0*s_6,0 + 1.0*s_1,0 - 7.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [7, 8, 9, 10, 12]  放进袋子  8  袋子种类为2              patten : [0, 0, 0, 1, 1, 1, 1, 0, 1, 2]
+装不完，装了4
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_9,8 + 1.0*s_8,8 - 4.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 2, 3, 4, 5, 6, 9, 11]  放进袋子  0  袋子种类为0              patten : [1, 0, 5, 0, 0, 1, 0, 1, 0, 0]
+haha
+Position{type=7, id=11, x=0, y=0, z=0, lx=250, ly=160, lz=100}
+Position{type=5, id=9, x=0, y=160, z=0, lx=180, ly=70, lz=100}
+Position{type=0, id=0, x=180, y=160, z=0, lx=60, ly=50, lz=40}
+Position{type=2, id=2, x=240, y=160, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=240, y=170, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=240, y=180, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=240, y=190, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=240, y=200, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [1, 7, 8, 10, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 0, 1, 1, 0, 1, 0, 1, 2]
+装不完，装了4
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_8,8 - 4.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [2, 3, 4, 5, 6, 9, 11]  放进袋子  0  袋子种类为0              patten : [0, 0, 5, 0, 0, 1, 0, 1, 0, 0]
+haha
+Position{type=7, id=11, x=0, y=0, z=0, lx=250, ly=160, lz=100}
+Position{type=5, id=9, x=0, y=160, z=0, lx=180, ly=70, lz=100}
+Position{type=2, id=2, x=180, y=160, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=190, y=160, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=200, y=160, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=210, y=160, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=220, y=160, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [1, 12]  放进袋子  1  袋子种类为0              patten : [0, 1, 0, 0, 0, 0, 0, 0, 1, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_1,1 + 1.0*s_12,1 - 1.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 7, 8]  放进袋子  2  袋子种类为0              patten : [1, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+addNoGoodCut:  (1.0*s_0,2 + 1.0*s_7,2 + 1.0*s_8,2 - 2.0*n_2) <= 0
+needToSolve=false needToAddCut=true
+将物品  [10]  放进袋子  3  袋子种类为0              patten : [0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+needToSolve=false needToAddCut=false
+print n
+[1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [1, 2, 3, 4, 5, 6, 11]  放进袋子  0  袋子种类为0              patten : [0, 1, 5, 0, 0, 0, 0, 1, 0, 0]
+装不完，装了6
+addNoGoodCut:  (1.0*s_11,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_4,0 + 1.0*s_5,0 + 1.0*s_6,0 + 1.0*s_1,0 - 6.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 9, 12]  放进袋子  1  袋子种类为0              patten : [1, 0, 0, 0, 0, 1, 0, 0, 1, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_0,1 + 1.0*s_9,1 + 1.0*s_12,1 - 2.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [7, 8]  放进袋子  2  袋子种类为0              patten : [0, 0, 0, 1, 1, 0, 0, 0, 0, 0]
+addNoGoodCut:  (1.0*s_7,2 + 1.0*s_8,2 - 1.0*n_2) <= 0
+needToSolve=false needToAddCut=true
+将物品  [10]  放进袋子  3  袋子种类为0              patten : [0, 0, 0, 0, 0, 0, 1, 0, 0, 0]
+needToSolve=false needToAddCut=false
+print n
+[1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [0, 1, 2, 3, 4, 5, 11]  放进袋子  0  袋子种类为0              patten : [1, 1, 4, 0, 0, 0, 0, 1, 0, 0]
+装不完，装了6
+addNoGoodCut:  (1.0*s_11,0 + 1.0*s_0,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_4,0 + 1.0*s_5,0 + 1.0*s_1,0 - 6.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [9, 12]  放进袋子  1  袋子种类为0              patten : [0, 0, 0, 0, 0, 1, 0, 0, 1, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_9,1 + 1.0*s_12,1 - 1.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [6, 7, 8, 10]  放进袋子  5  袋子种类为1              patten : [0, 0, 1, 1, 1, 0, 1, 0, 0, 1]
+addNoGoodCut:  (1.0*s_6,5 + 1.0*s_7,5 + 1.0*s_8,5 + 1.0*s_10,5 - 3.0*n_5) <= 0
+needToSolve=false needToAddCut=true
+print n
+[1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [0, 2, 3, 12]  放进袋子  0  袋子种类为0              patten : [1, 0, 2, 0, 0, 0, 0, 0, 1, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=0, id=0, x=0, y=0, z=0, lx=60, ly=40, lz=50}
+Position{type=2, id=0, x=280, y=0, z=50, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=290, y=250, z=60, lx=10, ly=10, lz=10}
+Position{type=8, id=0, x=0, y=40, z=0, lx=280, ly=220, lz=70}
+needToSolve=true needToAddCut=false
+将物品  [1, 4, 5, 6, 8, 9]  放进袋子  1  袋子种类为0              patten : [0, 1, 3, 0, 1, 1, 0, 0, 0, 0]
+装不完，装了5
+addNoGoodCut:  (1.0*s_8,1 + 1.0*s_9,1 + 1.0*s_4,1 + 1.0*s_5,1 + 1.0*s_6,1 + 1.0*s_1,1 - 5.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [7, 10, 11]  放进袋子  5  袋子种类为1              patten : [0, 0, 0, 1, 0, 0, 1, 1, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_7,5 + 1.0*s_10,5 + 1.0*s_11,5 - 2.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 1.0, 0.0]
+将物品  [0, 1, 2, 12]  放进袋子  0  袋子种类为0              patten : [1, 1, 1, 0, 0, 0, 0, 0, 1, 0]
+addNoGoodCut:  (1.0*s_0,0 + 1.0*s_1,0 + 1.0*s_2,0 + 1.0*s_12,0 - 3.0*n_0) <= 0
+needToSolve=false needToAddCut=true
+将物品  [3, 4, 5, 6, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [0, 0, 4, 1, 1, 1, 1, 1, 0, 2]
+装不完，装了8
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_7,8 + 1.0*s_9,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 8.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 1.0, 0.0]
+将物品  [0, 2, 3, 12]  放进袋子  0  袋子种类为0              patten : [1, 0, 2, 0, 0, 0, 0, 0, 1, 0]
+needToSolve=false needToAddCut=false
+将物品  [1, 4, 5, 6, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [0, 1, 3, 1, 1, 1, 1, 1, 0, 2]
+装不完，装了7
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 7.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 1.0, 0.0]
+将物品  [1, 2, 3, 12]  放进袋子  0  袋子种类为0              patten : [0, 1, 2, 0, 0, 0, 0, 0, 1, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_1,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_12,0 - 3.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 4, 5, 6, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [1, 0, 3, 1, 1, 1, 1, 1, 0, 2]
+装不完，装了8
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_7,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 8.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 1.0, 0.0]
+将物品  [0, 2, 3, 4, 5, 6, 12]  放进袋子  0  袋子种类为0              patten : [1, 0, 5, 0, 0, 0, 0, 0, 1, 0]
+haha
+Position{type=8, id=12, x=0, y=0, z=0, lx=280, ly=220, lz=70}
+Position{type=0, id=0, x=0, y=220, z=0, lx=60, ly=40, lz=50}
+Position{type=2, id=2, x=60, y=220, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=70, y=220, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=80, y=220, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=90, y=220, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=100, y=220, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [1, 7, 8, 9, 10, 11]  放进袋子  8  袋子种类为2              patten : [0, 1, 0, 1, 1, 1, 1, 1, 0, 2]
+装不完，装了5
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_9,8 + 1.0*s_8,8 - 5.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, -0.0, 1.0, 0.0]
+将物品  [0, 2, 3, 4, 9, 12]  放进袋子  0  袋子种类为0              patten : [1, 0, 3, 0, 0, 1, 0, 0, 1, 0]
+addNoGoodCut:  (1.0*s_0,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_4,0 + 1.0*s_9,0 + 1.0*s_12,0 - 5.0*n_0) <= 0
+needToSolve=false needToAddCut=true
+将物品  [1, 5, 6, 7, 8, 10, 11]  放进袋子  8  袋子种类为2              patten : [0, 1, 2, 1, 1, 0, 1, 1, 0, 2]
+装不完，装了5
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_7,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_8,8 - 5.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+将物品  [0, 2, 3, 4, 5, 7, 8, 10]  放进袋子  5  袋子种类为1              patten : [1, 0, 4, 1, 1, 0, 1, 0, 0, 1]
+装不完，装了6
+addNoGoodCut:  (1.0*s_10,5 + 1.0*s_0,5 + 1.0*s_2,5 + 1.0*s_3,5 + 1.0*s_4,5 + 1.0*s_5,5 + 1.0*s_8,5 - 6.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+将物品  [1, 6, 9, 11, 12]  放进袋子  6  袋子种类为1              patten : [0, 1, 1, 0, 0, 1, 0, 1, 1, 1]
+装不完，装了4
+addNoGoodCut:  (1.0*s_12,6 + 1.0*s_1,6 + 1.0*s_9,6 + 1.0*s_6,6 + 1.0*s_11,6 - 4.0*n_6) <= 0
+needToSolve=true needToAddCut=true
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+将物品  [1, 2, 3, 4, 5, 6, 8, 9, 10]  放进袋子  5  袋子种类为1              patten : [0, 1, 5, 0, 1, 1, 1, 0, 0, 1]
+装不完，装了7
+addNoGoodCut:  (1.0*s_10,5 + 1.0*s_9,5 + 1.0*s_2,5 + 1.0*s_3,5 + 1.0*s_4,5 + 1.0*s_5,5 + 1.0*s_6,5 + 1.0*s_8,5 - 7.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 7, 11, 12]  放进袋子  6  袋子种类为1              patten : [1, 0, 0, 1, 0, 0, 0, 1, 1, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_0,6 + 1.0*s_7,6 + 1.0*s_11,6 + 1.0*s_12,6 - 3.0*n_6) <= 0
+needToSolve=true needToAddCut=true
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0, 0.0]
+将物品  [0, 1, 8, 9, 10]  放进袋子  5  袋子种类为1              patten : [1, 1, 0, 0, 1, 1, 1, 0, 0, 1]
+装不完，装了4
+addNoGoodCut:  (1.0*s_10,5 + 1.0*s_8,5 + 1.0*s_9,5 + 1.0*s_0,5 + 1.0*s_1,5 - 4.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+将物品  [2, 3, 4, 5, 6, 7, 11, 12]  放进袋子  6  袋子种类为1              patten : [0, 0, 5, 1, 0, 0, 0, 1, 1, 1]
+装不完，装了6
+addNoGoodCut:  (1.0*s_12,6 + 1.0*s_2,6 + 1.0*s_3,6 + 1.0*s_4,6 + 1.0*s_5,6 + 1.0*s_6,6 + 1.0*s_11,6 - 6.0*n_6) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [1, 2, 3, 10]  放进袋子  0  袋子种类为0              patten : [0, 1, 2, 0, 0, 0, 1, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_1,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_10,0 - 3.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 4, 5, 6, 9, 11]  放进袋子  1  袋子种类为0              patten : [1, 0, 3, 0, 0, 1, 0, 1, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [7, 8, 12]  放进袋子  5  袋子种类为1              patten : [0, 0, 0, 1, 1, 0, 0, 0, 1, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_7,5 + 1.0*s_8,5 + 1.0*s_12,5 - 2.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [0, 1, 8]  放进袋子  0  袋子种类为0              patten : [1, 1, 0, 0, 1, 0, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_0,0 + 1.0*s_1,0 + 1.0*s_8,0 - 2.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [2, 3, 9, 10]  放进袋子  1  袋子种类为0              patten : [0, 0, 2, 0, 0, 1, 1, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_2,1 + 1.0*s_3,1 + 1.0*s_9,1 + 1.0*s_10,1 - 3.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [4, 5, 6, 7, 11, 12]  放进袋子  5  袋子种类为1              patten : [0, 0, 3, 1, 0, 0, 0, 1, 1, 1]
+装不完，装了4
+addNoGoodCut:  (1.0*s_12,5 + 1.0*s_4,5 + 1.0*s_5,5 + 1.0*s_6,5 + 1.0*s_11,5 - 4.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [1, 2, 3, 4, 8]  放进袋子  0  袋子种类为0              patten : [0, 1, 3, 0, 1, 0, 0, 0, 0, 0]
+装不完，装了4
+addNoGoodCut:  (1.0*s_8,0 + 1.0*s_2,0 + 1.0*s_3,0 + 1.0*s_4,0 + 1.0*s_1,0 - 4.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 5, 9, 10]  放进袋子  1  袋子种类为0              patten : [1, 0, 1, 0, 0, 1, 1, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_0,1 + 1.0*s_5,1 + 1.0*s_9,1 + 1.0*s_10,1 - 3.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [6, 7, 11, 12]  放进袋子  5  袋子种类为1              patten : [0, 0, 1, 1, 0, 0, 0, 1, 1, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_6,5 + 1.0*s_7,5 + 1.0*s_11,5 + 1.0*s_12,5 - 3.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [1, 8, 9]  放进袋子  0  袋子种类为0              patten : [0, 1, 0, 0, 1, 1, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_1,0 + 1.0*s_8,0 + 1.0*s_9,0 - 2.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 2, 3, 4, 5, 6, 10]  放进袋子  1  袋子种类为0              patten : [1, 0, 5, 0, 0, 0, 1, 0, 0, 0]
+装不完，装了6
+addNoGoodCut:  (1.0*s_10,1 + 1.0*s_2,1 + 1.0*s_3,1 + 1.0*s_4,1 + 1.0*s_5,1 + 1.0*s_6,1 + 1.0*s_0,1 - 6.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [7, 11, 12]  放进袋子  5  袋子种类为1              patten : [0, 0, 0, 1, 0, 0, 0, 1, 1, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_7,5 + 1.0*s_11,5 + 1.0*s_12,5 - 2.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [1, 8]  放进袋子  0  袋子种类为0              patten : [0, 1, 0, 0, 1, 0, 0, 0, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [0, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 0, 5, 1, 0, 1, 1, 1, 1, 2]
+addNoGoodCut:  (1.0*s_0,8 + 1.0*s_2,8 + 1.0*s_3,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_7,8 + 1.0*s_9,8 + 1.0*s_10,8 + 1.0*s_11,8 + 1.0*s_12,8 - 10.0*n_8) <= 0
+needToSolve=false needToAddCut=true
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [1, 2, 3, 8]  放进袋子  0  袋子种类为0              patten : [0, 1, 2, 0, 1, 0, 0, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Optimal           Position{type=1, id=0, x=10, y=0, z=0, lx=80, ly=230, lz=80}
+Position{type=2, id=0, x=0, y=210, z=80, lx=10, ly=10, lz=10}
+Position{type=2, id=0, x=260, y=220, z=90, lx=10, ly=10, lz=10}
+Position{type=4, id=0, x=100, y=0, z=0, lx=160, ly=210, lz=100}
+needToSolve=true needToAddCut=false
+将物品  [0, 4, 5, 6, 7, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [1, 0, 3, 1, 0, 1, 1, 1, 1, 2]
+装不完，装了8
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_9,8 + 1.0*s_0,8 + 1.0*s_4,8 + 1.0*s_5,8 + 1.0*s_6,8 + 1.0*s_11,8 - 8.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.00000000000025, -1.2501111257279263E-13, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 2, 3, 4, 5, 6, 7, 9]  放进袋子  0  袋子种类为0              patten : [1, 0, 5, 1, 0, 1, 0, 0, 0, 0]
+haha
+Position{type=3, id=7, x=0, y=0, z=0, lx=200, ly=140, lz=100}
+Position{type=5, id=9, x=0, y=140, z=0, lx=180, ly=70, lz=100}
+Position{type=0, id=0, x=180, y=140, z=0, lx=40, ly=60, lz=50}
+Position{type=2, id=2, x=200, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=210, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=200, y=10, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=210, y=10, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=200, y=20, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [1, 8, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 0, 0, 1, 0, 1, 1, 1, 2]
+装不完，装了3
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_8,8 + 1.0*s_11,8 - 3.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 2, 3, 4, 5, 6, 8]  放进袋子  0  袋子种类为0              patten : [1, 0, 5, 0, 1, 0, 0, 0, 0, 0]
+haha
+Position{type=4, id=8, x=0, y=0, z=0, lx=210, ly=160, lz=100}
+Position{type=0, id=0, x=210, y=0, z=0, lx=40, ly=60, lz=50}
+Position{type=2, id=2, x=210, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=220, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=230, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=240, y=60, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=210, y=70, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [1, 7, 9, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 0, 1, 0, 1, 1, 1, 1, 2]
+装不完，装了5
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_9,8 + 1.0*s_11,8 - 5.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.000000000000125, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 2, 3, 4, 5, 6, 8, 9]  放进袋子  0  袋子种类为0              patten : [1, 0, 5, 0, 1, 1, 0, 0, 0, 0]
+haha
+Position{type=4, id=8, x=0, y=0, z=0, lx=210, ly=160, lz=100}
+Position{type=5, id=9, x=0, y=160, z=0, lx=180, ly=70, lz=100}
+Position{type=0, id=0, x=180, y=160, z=0, lx=40, ly=60, lz=50}
+Position{type=2, id=2, x=210, y=0, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=3, x=210, y=10, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=4, x=210, y=20, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=5, x=210, y=30, z=0, lx=10, ly=10, lz=10}
+Position{type=2, id=6, x=210, y=40, z=0, lx=10, ly=10, lz=10}
+needToSolve=true needToAddCut=false
+将物品  [1, 7, 10, 11, 12]  放进袋子  8  袋子种类为2              patten : [0, 1, 0, 1, 0, 0, 1, 1, 1, 2]
+装不完，装了4
+addNoGoodCut:  (1.0*s_10,8 + 1.0*s_12,8 + 1.0*s_7,8 + 1.0*s_1,8 + 1.0*s_11,8 - 4.0*n_8) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 1.0, 0.0, 0.0, -0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [2, 9, 12]  放进袋子  0  袋子种类为0              patten : [0, 0, 1, 0, 0, 1, 0, 0, 1, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_2,0 + 1.0*s_9,0 + 1.0*s_12,0 - 2.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [1, 10]  放进袋子  1  袋子种类为0              patten : [0, 1, 0, 0, 0, 0, 1, 0, 0, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_1,1 + 1.0*s_10,1 - 1.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 3, 4, 5, 6, 7, 8, 11]  放进袋子  5  袋子种类为1              patten : [1, 0, 4, 1, 1, 0, 0, 1, 0, 1]
+装不完，装了7
+addNoGoodCut:  (1.0*s_11,5 + 1.0*s_7,5 + 1.0*s_0,5 + 1.0*s_3,5 + 1.0*s_4,5 + 1.0*s_5,5 + 1.0*s_6,5 + 1.0*s_8,5 - 7.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 1.0, 0.0, 0.0, -0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [1, 2, 12]  放进袋子  0  袋子种类为0              patten : [0, 1, 1, 0, 0, 0, 0, 0, 1, 0]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_1,0 + 1.0*s_2,0 + 1.0*s_12,0 - 2.0*n_0) <= 0
+needToSolve=true needToAddCut=true
+将物品  [3, 4, 5, 6, 9, 10]  放进袋子  1  袋子种类为0              patten : [0, 0, 4, 0, 0, 1, 1, 0, 0, 0]
+装不完，装了5
+addNoGoodCut:  (1.0*s_10,1 + 1.0*s_3,1 + 1.0*s_4,1 + 1.0*s_5,1 + 1.0*s_6,1 + 1.0*s_9,1 - 5.0*n_1) <= 0
+needToSolve=true needToAddCut=true
+将物品  [0, 7, 8, 11]  放进袋子  5  袋子种类为1              patten : [1, 0, 0, 1, 1, 0, 0, 1, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_0,5 + 1.0*s_7,5 + 1.0*s_8,5 + 1.0*s_11,5 - 3.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+print n
+[1.0, 1.0, -0.0, 0.0, -0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [1, 12]  放进袋子  0  袋子种类为0              patten : [0, 1, 0, 0, 0, 0, 0, 0, 1, 0]
+addNoGoodCut:  (1.0*s_1,0 + 1.0*s_12,0 - 1.0*n_0) <= 0
+needToSolve=false needToAddCut=true
+将物品  [2, 3, 4, 5, 6, 9, 11]  放进袋子  1  袋子种类为0              patten : [0, 0, 5, 0, 0, 1, 0, 1, 0, 0]
+needToSolve=false needToAddCut=false
+将物品  [0, 7, 8, 10]  放进袋子  5  袋子种类为1              patten : [1, 0, 0, 1, 1, 0, 1, 0, 0, 1]
+addNoGoodCut:  (1.0*s_0,5 + 1.0*s_7,5 + 1.0*s_8,5 + 1.0*s_10,5 - 3.0*n_5) <= 0
+needToSolve=false needToAddCut=true
+print n
+[1.0, 1.0, -0.0, 0.0, -0.0, 1.0, 0.0, 0.0, 0.0, 0.0]
+将物品  [0, 9, 12]  放进袋子  0  袋子种类为0              patten : [1, 0, 0, 0, 0, 1, 0, 0, 1, 0]
+addNoGoodCut:  (1.0*s_0,0 + 1.0*s_9,0 + 1.0*s_12,0 - 2.0*n_0) <= 0
+needToSolve=false needToAddCut=true
+将物品  [1, 2, 3, 4, 5, 6, 11]  放进袋子  1  袋子种类为0              patten : [0, 1, 5, 0, 0, 0, 0, 1, 0, 0]
+addNoGoodCut:  (1.0*s_1,1 + 1.0*s_2,1 + 1.0*s_3,1 + 1.0*s_4,1 + 1.0*s_5,1 + 1.0*s_6,1 + 1.0*s_11,1 - 6.0*n_1) <= 0
+needToSolve=false needToAddCut=true
+将物品  [7, 8, 10]  放进袋子  5  袋子种类为1              patten : [0, 0, 0, 1, 1, 0, 1, 0, 0, 1]
+子问题建模完毕-->求解完毕-->子问题状态=Infeasible           addNoGoodCut:  (1.0*s_7,5 + 1.0*s_8,5 + 1.0*s_10,5 - 2.0*n_5) <= 0
+needToSolve=true needToAddCut=true
+
+GUB cover cuts applied:  1
+Clique cuts applied:  18
+Cover cuts applied:  11
+Implied bound cuts applied:  2
+Flow cuts applied:  3
+Mixed integer rounding cuts applied:  15
+Zero-half cuts applied:  4
+Gomory fractional cuts applied:  1
+User cuts applied:  101
+
+Root node processing (before b&c):
+  Real time             =    8.39 sec. (53.39 ticks)
+Sequential b&c:
+  Real time             =    5.30 sec. (54.15 ticks)
+                          ------------
+Total (root+branch&cut) =   13.69 sec. (107.54 ticks)
+!!Thread down
+1.700000000000079
+[-0.0, -0.0, 0.0, -0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, 0.0, 0.0, -0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, -0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -3.242417049914223E-13, 3.242417049914223E-13, -0.0]
+[-0.0, -0.0, 0.0, 0.0, -0.0, -1.1290968160437842E-13, 1.129199967631819E-13, -0.0, 1.0, -0.0]
+[-0.0, -0.0, 0.0, 0.0, -0.0, 1.0, -0.0, -0.0, 0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, 0.0, -2.258399935263638E-13, 2.258399935263638E-13, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0]
+Total time =14.039s
+——————————————————————————————————————————————————
+0.0   0.0    false
+0.191   6.1000000000000005    true
+1.381   1.4    false
+1.964   1.7    false
+2.404   2.0000000000001097    false
+2.727   2.4    false
+2.894   3.4    false
+2.905   3.4    true
+3.293   2.2    false
+3.553   2.9000000000000004    false
+3.982   2.0000000000000386    false
+4.316   1.7000000000000817    false
+4.401   2.000000000000069    false
+4.821   1.7000000000000433    false
+4.825   1.4    false
+4.827   1.4    false
+4.829   1.4    false
+4.83   1.4    false
+4.961   2.000000000000056    false
+4.962   1.3999999999999684    false
+5.1   1.7    false
+5.358   1.7000000000001547    false
+5.364   2.4    false
+5.367   1.4    false
+5.449   1.8    false
+5.45   1.4    false
+5.892   2.000000000000089    false
+6.002   1.4    false
+6.009   1.8    false
+6.099   2.1    false
+6.133   2.1    false
+6.137   1.7    false
+6.37   1.8    false
+6.519   2.1    true
+6.83   1.7    false
+7.106   1.700000000000079    false
+7.527   1.700000000000079    true
+7.726   1.4    false
+8.02   1.4    false
+8.221   1.4    false
+8.356   1.40000000000005    false
+8.422   1.40000000000005    false
+8.535   1.40000000000005    false
+8.598   1.5    false
+8.627   1.5    false
+8.633   1.40000000000005    false
+8.953   1.40000000000005    false
+9.435   1.40000000000005    false
+9.738   1.4    false
+9.928   1.40000000000005    false
+10.052   1.40000000000005    false
+10.163   1.40000000000005    false
+10.254   1.40000000000005    false
+10.342   1.40000000000005    false
+10.491   1.4    false
+10.643   1.4    false
+10.785   1.4    false
+10.971   1.4    false
+11.149   1.4    false
+11.236   1.6    false
+11.298   1.6    false
+11.347   1.6    false
+11.469   1.4    false
+11.578   1.4    false
+11.653   1.6    false
+11.737   1.6    false
+11.811   1.5    false
+11.856   1.5    false
+12.039   1.4    false
+12.179   1.4    false
+12.375   1.4    false
+12.475   1.4    false
+12.509   1.4    false
+12.599   1.4    false
+12.726   1.4    false
+12.814   1.4    false
+12.827   1.5    false
+12.859   1.5    false
+12.888   1.5    false
+12.977   1.5    false
+12.98   1.40000000000005    false
+13.175   1.40000000000005    false
+13.351   1.40000000000005    false
+13.471   1.40000000000005    false
+13.595   1.40000000000005    false
+13.718   1.5    false
+13.796   1.5    false
+13.799   1.5    false
+13.822   1.5    false

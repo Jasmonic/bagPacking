@@ -1,0 +1,647 @@
+[4, 2, 2]
+[Item{type=0, id=0, p=100, q=50, r=100, num=1, volume=500000}, Item{type=1, id=1, p=260, q=60, r=220, num=1, volume=3432000}, Item{type=2, id=2, p=10, q=10, r=10, num=1, volume=1000}, Item{type=3, id=3, p=110, q=110, r=180, num=1, volume=2178000}, Item{type=4, id=4, p=220, q=50, r=240, num=1, volume=2640000}, Item{type=5, id=5, p=190, q=70, r=110, num=1, volume=1463000}, Item{type=5, id=6, p=190, q=70, r=110, num=1, volume=1463000}, Item{type=5, id=7, p=190, q=70, r=110, num=1, volume=1463000}, Item{type=6, id=8, p=170, q=50, r=220, num=1, volume=1870000}, Item{type=7, id=9, p=130, q=30, r=100, num=1, volume=390000}, Item{type=8, id=10, p=220, q=180, r=20, num=1, volume=792000}]
+[Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=4}, Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=2}, Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=2}]
+Instance{bagTypeCount=3, itemTypeCount=9, bagCount=8, itemCount=11}
+[Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=4}, Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=2}, Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=2}]
+3
+0,1
+1,2
+2,3
+3,4
+4,5
+5,8
+8,9
+9,10
+10,11
+IloModel  {
+IloMinimize  : (0.4*n_0 + 0.4*n_1 + 0.4*n_2 + 0.4*n_3 + 0.7*n_4 + 0.7*n_5 + 1.0*n_6 + 1.0*n_7)
+IloRange bag_and_box0 : 1.0 <= (1.0*s_0,0 + 1.0*s_0,1 + 1.0*s_0,2 + 1.0*s_0,3 + 1.0*s_0,4 + 1.0*s_0,5 + 1.0*s_0,6 + 1.0*s_0,7) <= 1.0
+IloRange bag_and_box1 : 1.0 <= (1.0*s_1,0 + 1.0*s_1,1 + 1.0*s_1,2 + 1.0*s_1,3 + 1.0*s_1,4 + 1.0*s_1,5 + 1.0*s_1,6 + 1.0*s_1,7) <= 1.0
+IloRange bag_and_box2 : 1.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 + 1.0*s_2,5 + 1.0*s_2,6 + 1.0*s_2,7) <= 1.0
+IloRange bag_and_box3 : 1.0 <= (1.0*s_3,0 + 1.0*s_3,1 + 1.0*s_3,2 + 1.0*s_3,3 + 1.0*s_3,4 + 1.0*s_3,5 + 1.0*s_3,6 + 1.0*s_3,7) <= 1.0
+IloRange bag_and_box4 : 1.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 + 1.0*s_4,5 + 1.0*s_4,6 + 1.0*s_4,7) <= 1.0
+IloRange bag_and_box5 : 1.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 + 1.0*s_5,5 + 1.0*s_5,6 + 1.0*s_5,7) <= 1.0
+IloRange bag_and_box6 : 1.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 + 1.0*s_6,4 + 1.0*s_6,5 + 1.0*s_6,6 + 1.0*s_6,7) <= 1.0
+IloRange bag_and_box7 : 1.0 <= (1.0*s_7,0 + 1.0*s_7,1 + 1.0*s_7,2 + 1.0*s_7,3 + 1.0*s_7,4 + 1.0*s_7,5 + 1.0*s_7,6 + 1.0*s_7,7) <= 1.0
+IloRange bag_and_box8 : 1.0 <= (1.0*s_8,0 + 1.0*s_8,1 + 1.0*s_8,2 + 1.0*s_8,3 + 1.0*s_8,4 + 1.0*s_8,5 + 1.0*s_8,6 + 1.0*s_8,7) <= 1.0
+IloRange bag_and_box9 : 1.0 <= (1.0*s_9,0 + 1.0*s_9,1 + 1.0*s_9,2 + 1.0*s_9,3 + 1.0*s_9,4 + 1.0*s_9,5 + 1.0*s_9,6 + 1.0*s_9,7) <= 1.0
+IloRange bag_and_box10 : 1.0 <= (1.0*s_10,0 + 1.0*s_10,1 + 1.0*s_10,2 + 1.0*s_10,3 + 1.0*s_10,4 + 1.0*s_10,5 + 1.0*s_10,6 + 1.0*s_10,7) <= 1.0
+IloRange Volume_0 : -infinity <= (500000.0*s_0,0 + 3432000.0*s_1,0 + 1000.0*s_2,0 + 2178000.0*s_3,0 + 2640000.0*s_4,0 + 1463000.0*s_5,0 + 1463000.0*s_6,0 + 1463000.0*s_7,0 + 1870000.0*s_8,0 + 390000.0*s_9,0 + 792000.0*s_10,0 - 6305299.284992639*n_0) <= 0.0
+IloRange Volume_1 : -infinity <= (500000.0*s_0,1 + 3432000.0*s_1,1 + 1000.0*s_2,1 + 2178000.0*s_3,1 + 2640000.0*s_4,1 + 1463000.0*s_5,1 + 1463000.0*s_6,1 + 1463000.0*s_7,1 + 1870000.0*s_8,1 + 390000.0*s_9,1 + 792000.0*s_10,1 - 6305299.284992639*n_1) <= 0.0
+IloRange Volume_2 : -infinity <= (500000.0*s_0,2 + 3432000.0*s_1,2 + 1000.0*s_2,2 + 2178000.0*s_3,2 + 2640000.0*s_4,2 + 1463000.0*s_5,2 + 1463000.0*s_6,2 + 1463000.0*s_7,2 + 1870000.0*s_8,2 + 390000.0*s_9,2 + 792000.0*s_10,2 - 6305299.284992639*n_2) <= 0.0
+IloRange Volume_3 : -infinity <= (500000.0*s_0,3 + 3432000.0*s_1,3 + 1000.0*s_2,3 + 2178000.0*s_3,3 + 2640000.0*s_4,3 + 1463000.0*s_5,3 + 1463000.0*s_6,3 + 1463000.0*s_7,3 + 1870000.0*s_8,3 + 390000.0*s_9,3 + 792000.0*s_10,3 - 6305299.284992639*n_3) <= 0.0
+IloRange Volume_4 : -infinity <= (500000.0*s_0,4 + 3432000.0*s_1,4 + 1000.0*s_2,4 + 2178000.0*s_3,4 + 2640000.0*s_4,4 + 1463000.0*s_5,4 + 1463000.0*s_6,4 + 1463000.0*s_7,4 + 1870000.0*s_8,4 + 390000.0*s_9,4 + 792000.0*s_10,4 - 1.1340839946075162E7*n_4) <= 0.0
+IloRange Volume_5 : -infinity <= (500000.0*s_0,5 + 3432000.0*s_1,5 + 1000.0*s_2,5 + 2178000.0*s_3,5 + 2640000.0*s_4,5 + 1463000.0*s_5,5 + 1463000.0*s_6,5 + 1463000.0*s_7,5 + 1870000.0*s_8,5 + 390000.0*s_9,5 + 792000.0*s_10,5 - 1.1340839946075162E7*n_5) <= 0.0
+IloRange Volume_6 : -infinity <= (500000.0*s_0,6 + 3432000.0*s_1,6 + 1000.0*s_2,6 + 2178000.0*s_3,6 + 2640000.0*s_4,6 + 1463000.0*s_5,6 + 1463000.0*s_6,6 + 1463000.0*s_7,6 + 1870000.0*s_8,6 + 390000.0*s_9,6 + 792000.0*s_10,6 - 1.9635004901018865E7*n_6) <= 0.0
+IloRange Volume_7 : -infinity <= (500000.0*s_0,7 + 3432000.0*s_1,7 + 1000.0*s_2,7 + 2178000.0*s_3,7 + 2640000.0*s_4,7 + 1463000.0*s_5,7 + 1463000.0*s_6,7 + 1463000.0*s_7,7 + 1870000.0*s_8,7 + 390000.0*s_9,7 + 792000.0*s_10,7 - 1.9635004901018865E7*n_7) <= 0.0
+IloRange boxCut5,0 : 0.0 <= (1.0*s_5,0 - 1.0*s_6,0) <= infinity
+IloRange boxCut5,1 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 - 1.0*s_6,1) <= infinity
+IloRange boxCut5,2 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 - 1.0*s_6,2) <= infinity
+IloRange boxCut5,3 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 - 1.0*s_6,3) <= infinity
+IloRange boxCut5,4 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 - 1.0*s_6,4) <= infinity
+IloRange boxCut5,5 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 + 1.0*s_5,5 - 1.0*s_6,5) <= infinity
+IloRange boxCut5,6 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 + 1.0*s_5,5 + 1.0*s_5,6 - 1.0*s_6,6) <= infinity
+IloRange boxCut5,7 : 0.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 + 1.0*s_5,5 + 1.0*s_5,6 + 1.0*s_5,7 - 1.0*s_6,7) <= infinity
+IloRange boxCut6,0 : 0.0 <= (1.0*s_6,0 - 1.0*s_7,0) <= infinity
+IloRange boxCut6,1 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 - 1.0*s_7,1) <= infinity
+IloRange boxCut6,2 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 - 1.0*s_7,2) <= infinity
+IloRange boxCut6,3 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 - 1.0*s_7,3) <= infinity
+IloRange boxCut6,4 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 + 1.0*s_6,4 - 1.0*s_7,4) <= infinity
+IloRange boxCut6,5 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 + 1.0*s_6,4 + 1.0*s_6,5 - 1.0*s_7,5) <= infinity
+IloRange boxCut6,6 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 + 1.0*s_6,4 + 1.0*s_6,5 + 1.0*s_6,6 - 1.0*s_7,6) <= infinity
+IloRange boxCut6,7 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 + 1.0*s_6,4 + 1.0*s_6,5 + 1.0*s_6,6 + 1.0*s_6,7 - 1.0*s_7,7) <= infinity
+IloRange bagCut_0,1 : 0.0 <= (1.0*n_0 - 1.0*n_1) <= infinity
+IloRange bagCut_1,2 : 0.0 <= (1.0*n_1 - 1.0*n_2) <= infinity
+IloRange bagCut_2,3 : 0.0 <= (1.0*n_2 - 1.0*n_3) <= infinity
+IloRange bagCut_4,5 : 0.0 <= (1.0*n_4 - 1.0*n_5) <= infinity
+IloRange bagCut_6,7 : 0.0 <= (1.0*n_6 - 1.0*n_7) <= infinity
+
+}
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Threads                                 1
+!!Thread UP
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms.
+Tried aggregator 1 time.
+MIP Presolve eliminated 2 rows and 0 columns.
+MIP Presolve modified 362 coefficients.
+Reduced MIP has 38 rows, 96 columns, and 264 nonzeros.
+Reduced MIP has 96 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (0.30 ticks)
+print s[i]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+print n
+[1.0, 1.0, 1.0, 0.0, 1.0, 0.0, 1.0, 1.0]
+将物品  [5, 6]  放进袋子  0  袋子种类为0
+patten : [0, 0, 0, 0, 0, 2, 0, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[5, 6],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 2 times.
+MIP Presolve eliminated 2 rows and 6 columns.
+MIP Presolve modified 20 coefficients.
+Aggregator did 6 substitutions.
+Reduced MIP has 22 rows, 21 columns, and 87 nonzeros.
+Reduced MIP has 15 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.12 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.15 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.15 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.15 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 7, 8, 9, 10]  放进袋子  7  袋子种类为2
+patten : [1, 1, 1, 1, 1, 1, 1, 1, 1, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[0, 1, 2, 3, 4, 7, 8, 9, 10],7
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 2 times.
+MIP Presolve eliminated 0 rows and 1 columns.
+MIP Presolve modified 364 coefficients.
+Aggregator did 4 substitutions.
+Reduced MIP has 334 rows, 322 columns, and 1719 nonzeros.
+Reduced MIP has 294 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (2.51 ticks)
+Found incumbent of value 0.000000 after 0.02 sec. (4.14 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (4.16 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (4.16 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+Found incumbent of value 3.900000 after 0.05 sec. (0.35 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 38 rows, 96 columns, and 264 nonzeros.
+Reduced MIP has 96 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.12 ticks)
+Probing time = 0.00 sec. (0.14 ticks)
+Clique table members: 245.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.20 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            3.9000        0.0000           100.00%
+      0     0        0.9995     2        3.9000        0.9995       47   74.37%
+print s[i]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+print n
+[0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0]
+将物品  [3, 4, 5, 6, 8, 9]  放进袋子  4  袋子种类为1
+patten : [0, 0, 0, 1, 1, 2, 1, 1, 0, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[3, 4, 5, 6, 8, 9],4
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 2 times.
+MIP Presolve eliminated 5 rows and 11 columns.
+MIP Presolve modified 156 coefficients.
+Aggregator did 7 substitutions.
+Reduced MIP has 152 rows, 147 columns, and 749 nonzeros.
+Reduced MIP has 128 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.04 ticks)
+Probing fixed 8 vars, tightened 0 bounds.
+Probing time = 0.00 sec. (0.20 ticks)
+Cover probing fixed 0 vars, tightened 24 bounds.
+Tried aggregator 2 times.
+Detecting symmetries...
+MIP Presolve eliminated 5 rows and 8 columns.
+MIP Presolve modified 94 coefficients.
+Aggregator did 2 substitutions.
+Reduced MIP has 145 rows, 137 columns, and 700 nonzeros.
+Reduced MIP has 118 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (0.95 ticks)
+Probing fixed 2 vars, tightened 6 bounds.
+Probing time = 0.00 sec. (0.23 ticks)
+Cover probing fixed 0 vars, tightened 6 bounds.
+Clique table members: 277.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (0.43 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0000    36                      0.0000       50         
+      0     0        0.0000    36                     Cuts: 9       72         
+      0     0        0.0000    36                    Cuts: 67      104         
+      0     0        0.0000    36                    Cuts: 22      121         
+      0     0        0.0000    36                    Cuts: 37      160         
+      0     2        0.0000    12                      0.0000      170         
+Elapsed time = 0.06 sec. (20.63 ticks, tree = 0.02 MB, solutions = 0)
+
+Clique cuts applied:  6
+Cover cuts applied:  18
+Implied bound cuts applied:  52
+Flow cuts applied:  9
+Mixed integer rounding cuts applied:  3
+Lift and project cuts applied:  1
+Gomory fractional cuts applied:  4
+
+Root node processing (before b&c):
+  Real time             =    0.06 sec. (20.56 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.05 sec. (10.80 ticks)
+  Sync time (average)   =    0.04 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.11 sec. (31.36 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_3,4 + 1.0*s_4,4 + 1.0*s_5,4 + 1.0*s_6,4 + 1.0*s_8,4 + 1.0*s_9,4 - 5.0*n_4) <= 0.0无法将物品 [3, 4, 5, 6, 8, 9]  放进袋子 4 袋子种类为1
+needToSolve=true needToAddCut=true
+将物品  [0, 1, 2, 7, 10]  放进袋子  5  袋子种类为1
+patten : [1, 1, 1, 0, 0, 1, 0, 0, 1, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[0, 1, 2, 7, 10],5
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 3 times.
+MIP Presolve eliminated 5 rows and 9 columns.
+MIP Presolve modified 300 coefficients.
+Aggregator did 9 substitutions.
+Reduced MIP has 106 rows, 105 columns, and 460 nonzeros.
+Reduced MIP has 89 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.99 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (1.41 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (1.42 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (1.42 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+print s[i]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, 1.0, 0.0, -0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, 0.0, 1.0, -0.0, -0.0]
+[-0.0, -0.0, 0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, 1.0, 0.0, -0.0, -0.0]
+[-0.0, -0.0, 0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+print n
+[-0.0, -0.0, -0.0, 0.0, 1.0, 1.0, -0.0, -0.0]
+将物品  [1, 4, 5, 6, 8, 9]  放进袋子  4  袋子种类为1
+patten : [0, 1, 0, 0, 1, 2, 1, 1, 0, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[1, 4, 5, 6, 8, 9],4
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 3 times.
+MIP Presolve eliminated 11 rows and 18 columns.
+MIP Presolve modified 198 coefficients.
+Aggregator did 11 substitutions.
+Reduced MIP has 142 rows, 136 columns, and 668 nonzeros.
+Reduced MIP has 117 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (1.10 ticks)
+Probing fixed 19 vars, tightened 33 bounds.
+Probing time = 0.00 sec. (0.31 ticks)
+Cover probing fixed 4 vars, tightened 10 bounds.
+Tried aggregator 2 times.
+MIP Presolve eliminated 18 rows and 27 columns.
+MIP Presolve modified 131 coefficients.
+Aggregator did 6 substitutions.
+Reduced MIP has 118 rows, 103 columns, and 504 nonzeros.
+Reduced MIP has 84 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.75 ticks)
+Probing fixed 22 vars, tightened 14 bounds.
+Probing time = 0.00 sec. (0.27 ticks)
+Cover probing fixed 9 vars, tightened 20 bounds.
+Tried aggregator 2 times.
+MIP Presolve eliminated 35 rows and 34 columns.
+MIP Presolve modified 69 coefficients.
+Aggregator did 7 substitutions.
+Reduced MIP has 76 rows, 62 columns, and 291 nonzeros.
+Reduced MIP has 44 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.54 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (4.48 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (4.48 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_1,4 + 1.0*s_4,4 + 1.0*s_5,4 + 1.0*s_6,4 + 1.0*s_8,4 + 1.0*s_9,4 - 5.0*n_4) <= 0.0无法将物品 [1, 4, 5, 6, 8, 9]  放进袋子 4 袋子种类为1
+needToSolve=true needToAddCut=true
+将物品  [0, 2, 3, 7, 10]  放进袋子  5  袋子种类为1
+patten : [1, 0, 1, 1, 0, 1, 0, 0, 1, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[0, 2, 3, 7, 10],5
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 2 times.
+MIP Presolve eliminated 0 rows and 1 columns.
+MIP Presolve modified 165 coefficients.
+Aggregator did 4 substitutions.
+Reduced MIP has 116 rows, 118 columns, and 539 nonzeros.
+Reduced MIP has 102 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.86 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (1.32 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (1.33 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (1.33 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+print s[i]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0]
+print n
+[0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 0.0, 0.0]
+将物品  [1, 3, 5, 6, 7, 9]  放进袋子  4  袋子种类为1
+patten : [0, 1, 0, 1, 0, 3, 0, 1, 0, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[1, 3, 5, 6, 7, 9],4
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 2 times.
+MIP Presolve eliminated 4 rows and 14 columns.
+MIP Presolve modified 188 coefficients.
+Aggregator did 5 substitutions.
+Reduced MIP has 155 rows, 146 columns, and 756 nonzeros.
+Reduced MIP has 127 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.05 ticks)
+Probing fixed 15 vars, tightened 20 bounds.
+Probing time = 0.00 sec. (0.24 ticks)
+Cover probing fixed 0 vars, tightened 35 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 6 rows and 21 columns.
+MIP Presolve modified 153 coefficients.
+Reduced MIP has 149 rows, 125 columns, and 664 nonzeros.
+Reduced MIP has 106 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.72 ticks)
+Probing fixed 9 vars, tightened 4 bounds.
+Probing time = 0.00 sec. (0.22 ticks)
+Cover probing fixed 1 vars, tightened 3 bounds.
+Tried aggregator 4 times.
+Detecting symmetries...
+MIP Presolve eliminated 5 rows and 12 columns.
+MIP Presolve modified 56 coefficients.
+Aggregator did 10 substitutions.
+Reduced MIP has 134 rows, 103 columns, and 566 nonzeros.
+Reduced MIP has 84 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.95 ticks)
+Probing fixed 20 vars, tightened 13 bounds.
+Probing time = 0.00 sec. (0.19 ticks)
+Cover probing fixed 0 vars, tightened 7 bounds.
+Clique table members: 260.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (0.27 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0000    17                      0.0000       26         
+      0     0        0.0000    17                    Cuts: 11       31         
+      0     0        0.0000    17                    Cuts: 10       43         
+      0     0        0.0000    17                    Cuts: 23       60         
+      0     0        cutoff                                         60         
+Elapsed time = 0.03 sec. (12.46 ticks, tree = 0.01 MB, solutions = 0)
+
+Clique cuts applied:  5
+Cover cuts applied:  1
+Implied bound cuts applied:  4
+Mixed integer rounding cuts applied:  3
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  2
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (12.46 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.03 sec. (12.46 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_1,4 + 1.0*s_3,4 + 1.0*s_5,4 + 1.0*s_6,4 + 1.0*s_7,4 + 1.0*s_9,4 - 5.0*n_4) <= 0.0无法将物品 [1, 3, 5, 6, 7, 9]  放进袋子 4 袋子种类为1
+needToSolve=true needToAddCut=true
+将物品  [0, 2, 4, 8, 10]  放进袋子  5  袋子种类为1
+patten : [1, 0, 1, 0, 1, 0, 1, 0, 1, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[0, 2, 4, 8, 10],5
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 2 times.
+MIP Presolve eliminated 5 rows and 9 columns.
+MIP Presolve modified 218 coefficients.
+Aggregator did 9 substitutions.
+Reduced MIP has 106 rows, 105 columns, and 460 nonzeros.
+Reduced MIP has 89 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.68 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (1.09 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (1.10 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (1.10 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+      0     0        1.0000     2        3.9000      Cuts: 11       97   74.36%
+print s[i]
+[-0.0, 0.0, -0.0, -0.0, 0.0, -0.0, -0.0, 1.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0]
+[0.0, -0.0, 0.0, -0.0, -0.0, 0.0, -0.0, 1.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 0.0, 1.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 0.0, 1.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 1.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 0.0, 1.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 1.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+print n
+[-0.0, -0.0, -0.0, 0.0, 0.0, 0.0, 1.0, 1.0]
+将物品  [1, 4, 9, 10]  放进袋子  6  袋子种类为2
+patten : [0, 1, 0, 0, 1, 0, 0, 1, 1, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[1, 4, 9, 10],6
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 2 times.
+MIP Presolve eliminated 0 rows and 1 columns.
+MIP Presolve modified 42 coefficients.
+Aggregator did 4 substitutions.
+Reduced MIP has 79 rows, 82 columns, and 383 nonzeros.
+Reduced MIP has 69 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.48 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.81 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.81 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.81 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 2, 3, 5, 6, 7, 8]  放进袋子  7  袋子种类为2
+patten : [1, 0, 1, 1, 0, 3, 1, 0, 0, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[0, 2, 3, 5, 6, 7, 8],7
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 2 times.
+MIP Presolve eliminated 0 rows and 9 columns.
+MIP Presolve modified 244 coefficients.
+Aggregator did 2 substitutions.
+Reduced MIP has 213 rows, 202 columns, and 1047 nonzeros.
+Reduced MIP has 180 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (1.42 ticks)
+Found incumbent of value 0.000000 after 0.01 sec. (2.29 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (2.31 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (2.31 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+*     0+    0                            2.0000        1.0000            50.00%
+print s[i]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  放进袋子  6  袋子种类为2
+patten : [1, 1, 1, 1, 1, 3, 1, 1, 1, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],6
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 2 times.
+MIP Presolve eliminated 0 rows and 10 columns.
+MIP Presolve modified 537 coefficients.
+Aggregator did 4 substitutions.
+Reduced MIP has 485 rows, 451 columns, and 2543 nonzeros.
+Reduced MIP has 417 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (3.88 ticks)
+Probing time = 0.00 sec. (0.71 ticks)
+Cover probing fixed 0 vars, tightened 38 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 6 rows and 9 columns.
+MIP Presolve modified 223 coefficients.
+Reduced MIP has 479 rows, 442 columns, and 2522 nonzeros.
+Reduced MIP has 408 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (2.31 ticks)
+Probing fixed 0 vars, tightened 8 bounds.
+Probing time = 0.00 sec. (0.64 ticks)
+Cover probing fixed 0 vars, tightened 16 bounds.
+Clique table members: 279.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (1.62 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0000   125                      0.0000      163         
+      0     0        0.0000   125                    Cuts: 24      204         
+      0     0        0.0000   125                   Cuts: 157      293         
+      0     0        0.0000   125                    Cuts: 23      313         
+      0     0        0.0000   125                   Cuts: 106      359         
+      0     0        0.0000   125                    Cuts: 79      401         
+      0     0        0.0000   125                    Cuts: 70      434         
+      0     2        0.0000    38                      0.0000      434         
+Elapsed time = 0.20 sec. (102.95 ticks, tree = 0.02 MB, solutions = 0)
+   4064   858        0.0000    46                      0.0000    40861         
+*  4769+  885                            0.0000        0.0000             0.00%
+
+GUB cover cuts applied:  2
+Clique cuts applied:  2
+Cover cuts applied:  66
+Implied bound cuts applied:  55
+Flow cuts applied:  69
+Mixed integer rounding cuts applied:  105
+Zero-half cuts applied:  5
+Gomory fractional cuts applied:  46
+
+Root node processing (before b&c):
+  Real time             =    0.20 sec. (102.67 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.70 sec. (315.64 ticks)
+  Sync time (average)   =    0.21 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.91 sec. (418.31 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+*     0+    0                            1.0000        1.0000             0.00%
+      0     0        cutoff              1.0000        1.0000      100    0.00%
+Elapsed time = 1.19 sec. (2.27 ticks, tree = 0.01 MB, solutions = 3)
+
+Clique cuts applied:  4
+Cover cuts applied:  2
+Flow cuts applied:  1
+Mixed integer rounding cuts applied:  1
+Gomory fractional cuts applied:  1
+User cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =    1.19 sec. (2.28 ticks)
+Sequential b&c:
+  Real time             =    0.00 sec. (0.00 ticks)
+                          ------------
+Total (root+branch&cut) =    1.19 sec. (2.28 ticks)
+!!Thread down
+1.0
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+Total time =1.245s
+——————————————————————————————————————————————————

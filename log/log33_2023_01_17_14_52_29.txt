@@ -1,0 +1,2174 @@
+[2, 3, 2]
+[Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}, Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}, Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}, Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}, Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}, Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}, Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}, Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}, Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}, Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}, Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}, Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}]
+[Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=2}, Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=3}, Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=2}]
+Instance{bagTypeCount=3, itemTypeCount=6, bagCount=7, itemCount=12}
+[Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=2}, Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=3}, Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=2}]
+3
+2.0
+2.0
+0,4
+4,6
+6,8
+8,9
+9,10
+10,12
+IloModel  {
+IloMinimize  : (0.4*n_0 + 0.4*n_1 + 0.7*n_2 + 0.7*n_3 + 0.7*n_4 + 1.0*n_5 + 1.0*n_6)
+IloRange bag_and_box0 : 1.0 <= (1.0*s_0,0 + 1.0*s_0,1 + 1.0*s_0,2 + 1.0*s_0,3 + 1.0*s_0,4 + 1.0*s_0,5 + 1.0*s_0,6) <= 1.0
+IloRange bag_and_box1 : 1.0 <= (1.0*s_1,0 + 1.0*s_1,1 + 1.0*s_1,2 + 1.0*s_1,3 + 1.0*s_1,4 + 1.0*s_1,5 + 1.0*s_1,6) <= 1.0
+IloRange bag_and_box2 : 1.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 + 1.0*s_2,5 + 1.0*s_2,6) <= 1.0
+IloRange bag_and_box3 : 1.0 <= (1.0*s_3,0 + 1.0*s_3,1 + 1.0*s_3,2 + 1.0*s_3,3 + 1.0*s_3,4 + 1.0*s_3,5 + 1.0*s_3,6) <= 1.0
+IloRange bag_and_box4 : 1.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 + 1.0*s_4,5 + 1.0*s_4,6) <= 1.0
+IloRange bag_and_box5 : 1.0 <= (1.0*s_5,0 + 1.0*s_5,1 + 1.0*s_5,2 + 1.0*s_5,3 + 1.0*s_5,4 + 1.0*s_5,5 + 1.0*s_5,6) <= 1.0
+IloRange bag_and_box6 : 1.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 + 1.0*s_6,4 + 1.0*s_6,5 + 1.0*s_6,6) <= 1.0
+IloRange bag_and_box7 : 1.0 <= (1.0*s_7,0 + 1.0*s_7,1 + 1.0*s_7,2 + 1.0*s_7,3 + 1.0*s_7,4 + 1.0*s_7,5 + 1.0*s_7,6) <= 1.0
+IloRange bag_and_box8 : 1.0 <= (1.0*s_8,0 + 1.0*s_8,1 + 1.0*s_8,2 + 1.0*s_8,3 + 1.0*s_8,4 + 1.0*s_8,5 + 1.0*s_8,6) <= 1.0
+IloRange bag_and_box9 : 1.0 <= (1.0*s_9,0 + 1.0*s_9,1 + 1.0*s_9,2 + 1.0*s_9,3 + 1.0*s_9,4 + 1.0*s_9,5 + 1.0*s_9,6) <= 1.0
+IloRange bag_and_box10 : 1.0 <= (1.0*s_10,0 + 1.0*s_10,1 + 1.0*s_10,2 + 1.0*s_10,3 + 1.0*s_10,4 + 1.0*s_10,5 + 1.0*s_10,6) <= 1.0
+IloRange bag_and_box11 : 1.0 <= (1.0*s_11,0 + 1.0*s_11,1 + 1.0*s_11,2 + 1.0*s_11,3 + 1.0*s_11,4 + 1.0*s_11,5 + 1.0*s_11,6) <= 1.0
+IloRange Volume_0 : -infinity <= (2400000.0*s_0,0 + 2400000.0*s_1,0 + 2400000.0*s_2,0 + 2400000.0*s_3,0 + 864000.0*s_4,0 + 864000.0*s_5,0 + 864000.0*s_6,0 + 864000.0*s_7,0 + 286000.0*s_8,0 + 3128000.0*s_9,0 + 1350000.0*s_10,0 + 1350000.0*s_11,0 - 6305299.284992639*n_0) <= 0.0
+IloRange Volume_1 : -infinity <= (2400000.0*s_0,1 + 2400000.0*s_1,1 + 2400000.0*s_2,1 + 2400000.0*s_3,1 + 864000.0*s_4,1 + 864000.0*s_5,1 + 864000.0*s_6,1 + 864000.0*s_7,1 + 286000.0*s_8,1 + 3128000.0*s_9,1 + 1350000.0*s_10,1 + 1350000.0*s_11,1 - 6305299.284992639*n_1) <= 0.0
+IloRange Volume_2 : -infinity <= (2400000.0*s_0,2 + 2400000.0*s_1,2 + 2400000.0*s_2,2 + 2400000.0*s_3,2 + 864000.0*s_4,2 + 864000.0*s_5,2 + 864000.0*s_6,2 + 864000.0*s_7,2 + 286000.0*s_8,2 + 3128000.0*s_9,2 + 1350000.0*s_10,2 + 1350000.0*s_11,2 - 1.1340839946075162E7*n_2) <= 0.0
+IloRange Volume_3 : -infinity <= (2400000.0*s_0,3 + 2400000.0*s_1,3 + 2400000.0*s_2,3 + 2400000.0*s_3,3 + 864000.0*s_4,3 + 864000.0*s_5,3 + 864000.0*s_6,3 + 864000.0*s_7,3 + 286000.0*s_8,3 + 3128000.0*s_9,3 + 1350000.0*s_10,3 + 1350000.0*s_11,3 - 1.1340839946075162E7*n_3) <= 0.0
+IloRange Volume_4 : -infinity <= (2400000.0*s_0,4 + 2400000.0*s_1,4 + 2400000.0*s_2,4 + 2400000.0*s_3,4 + 864000.0*s_4,4 + 864000.0*s_5,4 + 864000.0*s_6,4 + 864000.0*s_7,4 + 286000.0*s_8,4 + 3128000.0*s_9,4 + 1350000.0*s_10,4 + 1350000.0*s_11,4 - 1.1340839946075162E7*n_4) <= 0.0
+IloRange Volume_5 : -infinity <= (2400000.0*s_0,5 + 2400000.0*s_1,5 + 2400000.0*s_2,5 + 2400000.0*s_3,5 + 864000.0*s_4,5 + 864000.0*s_5,5 + 864000.0*s_6,5 + 864000.0*s_7,5 + 286000.0*s_8,5 + 3128000.0*s_9,5 + 1350000.0*s_10,5 + 1350000.0*s_11,5 - 1.9635004901018865E7*n_5) <= 0.0
+IloRange Volume_6 : -infinity <= (2400000.0*s_0,6 + 2400000.0*s_1,6 + 2400000.0*s_2,6 + 2400000.0*s_3,6 + 864000.0*s_4,6 + 864000.0*s_5,6 + 864000.0*s_6,6 + 864000.0*s_7,6 + 286000.0*s_8,6 + 3128000.0*s_9,6 + 1350000.0*s_10,6 + 1350000.0*s_11,6 - 1.9635004901018865E7*n_6) <= 0.0
+IloRange CutC_0_0 : -infinity <= (1.0*s_0,0 + 1.0*s_1,0 + 1.0*s_2,0 + 1.0*s_3,0 - 2.0*n_0) <= 0.0
+IloRange CutC_0_1 : -infinity <= (1.0*s_0,1 + 1.0*s_1,1 + 1.0*s_2,1 + 1.0*s_3,1 - 2.0*n_1) <= 0.0
+IloRange boxCut0,0 : 0.0 <= (1.0*s_0,0 - 1.0*s_1,0) <= infinity
+IloRange boxCut0,1 : 0.0 <= (1.0*s_0,0 + 1.0*s_0,1 - 1.0*s_1,1) <= infinity
+IloRange boxCut0,2 : 0.0 <= (1.0*s_0,0 + 1.0*s_0,1 + 1.0*s_0,2 - 1.0*s_1,2) <= infinity
+IloRange boxCut0,3 : 0.0 <= (1.0*s_0,0 + 1.0*s_0,1 + 1.0*s_0,2 + 1.0*s_0,3 - 1.0*s_1,3) <= infinity
+IloRange boxCut0,4 : 0.0 <= (1.0*s_0,0 + 1.0*s_0,1 + 1.0*s_0,2 + 1.0*s_0,3 + 1.0*s_0,4 - 1.0*s_1,4) <= infinity
+IloRange boxCut0,5 : 0.0 <= (1.0*s_0,0 + 1.0*s_0,1 + 1.0*s_0,2 + 1.0*s_0,3 + 1.0*s_0,4 + 1.0*s_0,5 - 1.0*s_1,5) <= infinity
+IloRange boxCut0,6 : 0.0 <= (1.0*s_0,0 + 1.0*s_0,1 + 1.0*s_0,2 + 1.0*s_0,3 + 1.0*s_0,4 + 1.0*s_0,5 + 1.0*s_0,6 - 1.0*s_1,6) <= infinity
+IloRange boxCut1,0 : 0.0 <= (1.0*s_1,0 - 1.0*s_2,0) <= infinity
+IloRange boxCut1,1 : 0.0 <= (1.0*s_1,0 + 1.0*s_1,1 - 1.0*s_2,1) <= infinity
+IloRange boxCut1,2 : 0.0 <= (1.0*s_1,0 + 1.0*s_1,1 + 1.0*s_1,2 - 1.0*s_2,2) <= infinity
+IloRange boxCut1,3 : 0.0 <= (1.0*s_1,0 + 1.0*s_1,1 + 1.0*s_1,2 + 1.0*s_1,3 - 1.0*s_2,3) <= infinity
+IloRange boxCut1,4 : 0.0 <= (1.0*s_1,0 + 1.0*s_1,1 + 1.0*s_1,2 + 1.0*s_1,3 + 1.0*s_1,4 - 1.0*s_2,4) <= infinity
+IloRange boxCut1,5 : 0.0 <= (1.0*s_1,0 + 1.0*s_1,1 + 1.0*s_1,2 + 1.0*s_1,3 + 1.0*s_1,4 + 1.0*s_1,5 - 1.0*s_2,5) <= infinity
+IloRange boxCut1,6 : 0.0 <= (1.0*s_1,0 + 1.0*s_1,1 + 1.0*s_1,2 + 1.0*s_1,3 + 1.0*s_1,4 + 1.0*s_1,5 + 1.0*s_1,6 - 1.0*s_2,6) <= infinity
+IloRange boxCut2,0 : 0.0 <= (1.0*s_2,0 - 1.0*s_3,0) <= infinity
+IloRange boxCut2,1 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 - 1.0*s_3,1) <= infinity
+IloRange boxCut2,2 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 - 1.0*s_3,2) <= infinity
+IloRange boxCut2,3 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 - 1.0*s_3,3) <= infinity
+IloRange boxCut2,4 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 - 1.0*s_3,4) <= infinity
+IloRange boxCut2,5 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 + 1.0*s_2,5 - 1.0*s_3,5) <= infinity
+IloRange boxCut2,6 : 0.0 <= (1.0*s_2,0 + 1.0*s_2,1 + 1.0*s_2,2 + 1.0*s_2,3 + 1.0*s_2,4 + 1.0*s_2,5 + 1.0*s_2,6 - 1.0*s_3,6) <= infinity
+IloRange boxCut4,0 : 0.0 <= (1.0*s_4,0 - 1.0*s_5,0) <= infinity
+IloRange boxCut4,1 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 - 1.0*s_5,1) <= infinity
+IloRange boxCut4,2 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 - 1.0*s_5,2) <= infinity
+IloRange boxCut4,3 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 - 1.0*s_5,3) <= infinity
+IloRange boxCut4,4 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 - 1.0*s_5,4) <= infinity
+IloRange boxCut4,5 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 + 1.0*s_4,5 - 1.0*s_5,5) <= infinity
+IloRange boxCut4,6 : 0.0 <= (1.0*s_4,0 + 1.0*s_4,1 + 1.0*s_4,2 + 1.0*s_4,3 + 1.0*s_4,4 + 1.0*s_4,5 + 1.0*s_4,6 - 1.0*s_5,6) <= infinity
+IloRange boxCut6,0 : 0.0 <= (1.0*s_6,0 - 1.0*s_7,0) <= infinity
+IloRange boxCut6,1 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 - 1.0*s_7,1) <= infinity
+IloRange boxCut6,2 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 - 1.0*s_7,2) <= infinity
+IloRange boxCut6,3 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 - 1.0*s_7,3) <= infinity
+IloRange boxCut6,4 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 + 1.0*s_6,4 - 1.0*s_7,4) <= infinity
+IloRange boxCut6,5 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 + 1.0*s_6,4 + 1.0*s_6,5 - 1.0*s_7,5) <= infinity
+IloRange boxCut6,6 : 0.0 <= (1.0*s_6,0 + 1.0*s_6,1 + 1.0*s_6,2 + 1.0*s_6,3 + 1.0*s_6,4 + 1.0*s_6,5 + 1.0*s_6,6 - 1.0*s_7,6) <= infinity
+IloRange boxCut10,0 : 0.0 <= (1.0*s_10,0 - 1.0*s_11,0) <= infinity
+IloRange boxCut10,1 : 0.0 <= (1.0*s_10,0 + 1.0*s_10,1 - 1.0*s_11,1) <= infinity
+IloRange boxCut10,2 : 0.0 <= (1.0*s_10,0 + 1.0*s_10,1 + 1.0*s_10,2 - 1.0*s_11,2) <= infinity
+IloRange boxCut10,3 : 0.0 <= (1.0*s_10,0 + 1.0*s_10,1 + 1.0*s_10,2 + 1.0*s_10,3 - 1.0*s_11,3) <= infinity
+IloRange boxCut10,4 : 0.0 <= (1.0*s_10,0 + 1.0*s_10,1 + 1.0*s_10,2 + 1.0*s_10,3 + 1.0*s_10,4 - 1.0*s_11,4) <= infinity
+IloRange boxCut10,5 : 0.0 <= (1.0*s_10,0 + 1.0*s_10,1 + 1.0*s_10,2 + 1.0*s_10,3 + 1.0*s_10,4 + 1.0*s_10,5 - 1.0*s_11,5) <= infinity
+IloRange boxCut10,6 : 0.0 <= (1.0*s_10,0 + 1.0*s_10,1 + 1.0*s_10,2 + 1.0*s_10,3 + 1.0*s_10,4 + 1.0*s_10,5 + 1.0*s_10,6 - 1.0*s_11,6) <= infinity
+IloRange bagCut_0,1 : 0.0 <= (1.0*n_0 - 1.0*n_1) <= infinity
+IloRange bagCut_2,3 : 0.0 <= (1.0*n_2 - 1.0*n_3) <= infinity
+IloRange bagCut_3,4 : 0.0 <= (1.0*n_3 - 1.0*n_4) <= infinity
+IloRange bagCut_5,6 : 0.0 <= (1.0*n_5 - 1.0*n_6) <= infinity
+
+}
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+CPXPARAM_Threads                                 1
+!!Thread UP
+Lazy constraint(s) or lazy constraint/branch callback is present.
+    Disabling dual reductions (CPX_PARAM_REDUCE) in presolve.
+    Disabling presolve reductions that prevent crushing forms.
+Tried aggregator 1 time.
+MIP Presolve eliminated 6 rows and 0 columns.
+MIP Presolve modified 353 coefficients.
+Reduced MIP has 61 rows, 91 columns, and 355 nonzeros.
+Reduced MIP has 91 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (0.41 ticks)
+print s[i]
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+print n
+[1.0, 1.0, 1.0, 1.0, 0.0, 1.0, 1.0]
+将物品  [0, 1, 4]  放进袋子  0  袋子种类为0
+patten : [2, 1, 0, 0, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[0, 1, 4],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Row 'width_0,0' infeasible, all entries at implied bounds.
+Presolve time = 0.00 sec. (0.10 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.12 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.12 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_0,0 + 1.0*s_1,0 + 1.0*s_4,0 - 2.0*n_0) <= 0.0无法将物品 [0, 1, 4]  放进袋子 0 袋子种类为0
+needToSolve=true needToAddCut=true
+将物品  [2, 6, 10]  放进袋子  1  袋子种类为0
+patten : [1, 0, 1, 0, 0, 1, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[2, 6, 10],1
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Row 'width_0,1' infeasible, all entries at implied bounds.
+Presolve time = 0.00 sec. (0.13 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.13 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.13 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_2,1 + 1.0*s_6,1 + 1.0*s_10,1 - 2.0*n_1) <= 0.0无法将物品 [2, 6, 10]  放进袋子 1 袋子种类为0
+needToSolve=true needToAddCut=true
+将物品  [3, 5, 7, 8, 9, 11]  放进袋子  6  袋子种类为2
+patten : [1, 1, 1, 1, 1, 1, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[3, 5, 7, 8, 9, 11],6
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 5 times.
+MIP Presolve eliminated 2 rows and 10 columns.
+MIP Presolve modified 172 coefficients.
+Aggregator did 18 substitutions.
+Reduced MIP has 144 rows, 137 columns, and 665 nonzeros.
+Reduced MIP has 118 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.01 sec. (1.79 ticks)
+Found incumbent of value 0.000000 after 0.01 sec. (2.37 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.01 sec. (2.38 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.01 sec. (2.38 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+print s[i]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, 1.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, 1.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, 1.0, -0.0, -0.0, -0.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+print n
+[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+将物品  [0, 6, 10]  放进袋子  0  袋子种类为0
+patten : [1, 0, 1, 0, 0, 1, 0]
+pattern good
+addCuts——IloRange  : -infinity <= (1.0*s_0,0 + 1.0*s_6,0 + 1.0*s_10,0 - 2.0*n_0) <= 0.0无法将物品 [0, 6, 10]  放进袋子 0 袋子种类为0
+needToSolve=false needToAddCut=true
+将物品  [1, 2]  放进袋子  1  袋子种类为0
+patten : [2, 0, 0, 0, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[1, 2],1
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Row 'width_0,1' infeasible, all entries at implied bounds.
+Presolve time = 0.00 sec. (0.06 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.07 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.07 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_1,1 + 1.0*s_2,1 - 1.0*n_1) <= 0.0无法将物品 [1, 2]  放进袋子 1 袋子种类为0
+needToSolve=true needToAddCut=true
+将物品  [9]  放进袋子  2  袋子种类为1
+patten : [0, 0, 0, 0, 1, 0, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[9],2
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 3 times.
+MIP Presolve eliminated 8 rows and 9 columns.
+MIP Presolve modified 9 coefficients.
+Aggregator did 6 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.04 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.04 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [8, 11]  放进袋子  3  袋子种类为1
+patten : [0, 0, 0, 1, 0, 1, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[8, 11],3
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 2 times.
+MIP Presolve eliminated 0 rows and 1 columns.
+MIP Presolve modified 42 coefficients.
+Aggregator did 4 substitutions.
+Reduced MIP has 26 rows, 28 columns, and 108 nonzeros.
+Reduced MIP has 21 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.18 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.28 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.28 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.28 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [4, 7]  放进袋子  4  袋子种类为1
+patten : [0, 1, 1, 0, 0, 0, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[4, 7],4
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 4 times.
+MIP Presolve eliminated 3 rows and 6 columns.
+MIP Presolve modified 27 coefficients.
+Aggregator did 12 substitutions.
+Reduced MIP has 15 rows, 15 columns, and 50 nonzeros.
+Reduced MIP has 8 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.18 ticks)
+Found incumbent of value 0.000000 after 0.02 sec. (0.22 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (0.22 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (0.22 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [3, 5]  放进袋子  5  袋子种类为2
+patten : [1, 1, 0, 0, 0, 0, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[3, 5],5
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 5 times.
+MIP Presolve eliminated 1 rows and 4 columns.
+MIP Presolve modified 20 coefficients.
+Aggregator did 9 substitutions.
+Reduced MIP has 20 rows, 20 columns, and 79 nonzeros.
+Reduced MIP has 13 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.24 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.31 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.31 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.31 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+print s[i]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, 1.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, 1.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, 1.0, -0.0, -0.0, -0.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+print n
+[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+将物品  [0, 6, 10]  放进袋子  0  袋子种类为0
+patten : [1, 0, 1, 0, 0, 1, 0]
+pattern good
+addCuts——IloRange  : -infinity <= (1.0*s_0,0 + 1.0*s_6,0 + 1.0*s_10,0 - 2.0*n_0) <= 0.0无法将物品 [0, 6, 10]  放进袋子 0 袋子种类为0
+needToSolve=false needToAddCut=true
+将物品  [1, 2]  放进袋子  1  袋子种类为0
+patten : [2, 0, 0, 0, 0, 0, 0]
+pattern good
+addCuts——IloRange  : -infinity <= (1.0*s_1,1 + 1.0*s_2,1 - 1.0*n_1) <= 0.0无法将物品 [1, 2]  放进袋子 1 袋子种类为0
+needToSolve=false needToAddCut=true
+将物品  [9]  放进袋子  2  袋子种类为1
+patten : [0, 0, 0, 0, 1, 0, 1]
+pattern good
+needToSolve=false needToAddCut=false
+将物品  [8, 11]  放进袋子  3  袋子种类为1
+patten : [0, 0, 0, 1, 0, 1, 1]
+pattern good
+needToSolve=false needToAddCut=false
+将物品  [4, 7]  放进袋子  4  袋子种类为1
+patten : [0, 1, 1, 0, 0, 0, 1]
+pattern good
+needToSolve=false needToAddCut=false
+将物品  [3, 5]  放进袋子  5  袋子种类为2
+patten : [1, 1, 0, 0, 0, 0, 2]
+pattern good
+needToSolve=false needToAddCut=false
+print s[i]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, 1.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, 1.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, 1.0, -0.0, -0.0, -0.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+print n
+[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+将物品  [0, 6, 10]  放进袋子  0  袋子种类为0
+patten : [1, 0, 1, 0, 0, 1, 0]
+pattern good
+addCuts——IloRange  : -infinity <= (1.0*s_0,0 + 1.0*s_6,0 + 1.0*s_10,0 - 2.0*n_0) <= 0.0无法将物品 [0, 6, 10]  放进袋子 0 袋子种类为0
+needToSolve=false needToAddCut=true
+将物品  [1, 2]  放进袋子  1  袋子种类为0
+patten : [2, 0, 0, 0, 0, 0, 0]
+pattern good
+addCuts——IloRange  : -infinity <= (1.0*s_1,1 + 1.0*s_2,1 - 1.0*n_1) <= 0.0无法将物品 [1, 2]  放进袋子 1 袋子种类为0
+needToSolve=false needToAddCut=true
+将物品  [9]  放进袋子  2  袋子种类为1
+patten : [0, 0, 0, 0, 1, 0, 1]
+pattern good
+needToSolve=false needToAddCut=false
+将物品  [8, 11]  放进袋子  3  袋子种类为1
+patten : [0, 0, 0, 1, 0, 1, 1]
+pattern good
+needToSolve=false needToAddCut=false
+将物品  [4, 7]  放进袋子  4  袋子种类为1
+patten : [0, 1, 1, 0, 0, 0, 1]
+pattern good
+needToSolve=false needToAddCut=false
+将物品  [3, 5]  放进袋子  5  袋子种类为2
+patten : [1, 1, 0, 0, 0, 0, 2]
+pattern good
+needToSolve=false needToAddCut=false
+print s[i]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, 1.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, 1.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, 1.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, 1.0, -0.0, -0.0, -0.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+print n
+[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+将物品  [0, 6, 10]  放进袋子  0  袋子种类为0
+patten : [1, 0, 1, 0, 0, 1, 0]
+pattern good
+addCuts——IloRange  : -infinity <= (1.0*s_0,0 + 1.0*s_6,0 + 1.0*s_10,0 - 2.0*n_0) <= 0.0无法将物品 [0, 6, 10]  放进袋子 0 袋子种类为0
+needToSolve=false needToAddCut=true
+将物品  [1, 2]  放进袋子  1  袋子种类为0
+patten : [2, 0, 0, 0, 0, 0, 0]
+pattern good
+addCuts——IloRange  : -infinity <= (1.0*s_1,1 + 1.0*s_2,1 - 1.0*n_1) <= 0.0无法将物品 [1, 2]  放进袋子 1 袋子种类为0
+needToSolve=false needToAddCut=true
+将物品  [9]  放进袋子  2  袋子种类为1
+patten : [0, 0, 0, 0, 1, 0, 1]
+pattern good
+needToSolve=false needToAddCut=false
+将物品  [8, 11]  放进袋子  3  袋子种类为1
+patten : [0, 0, 0, 1, 0, 1, 1]
+pattern good
+needToSolve=false needToAddCut=false
+将物品  [4, 7]  放进袋子  4  袋子种类为1
+patten : [0, 1, 1, 0, 0, 0, 1]
+pattern good
+needToSolve=false needToAddCut=false
+将物品  [3, 5]  放进袋子  5  袋子种类为2
+patten : [1, 1, 0, 0, 0, 0, 2]
+pattern good
+needToSolve=false needToAddCut=false
+Probing fixed 2 vars, tightened 0 bounds.
+Probing time = 0.00 sec. (0.17 ticks)
+Tried aggregator 1 time.
+MIP Presolve eliminated 3 rows and 2 columns.
+MIP Presolve added 2 rows and 0 columns.
+Reduced MIP has 60 rows, 89 columns, and 341 nonzeros.
+Reduced MIP has 89 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.23 ticks)
+Probing time = 0.00 sec. (0.16 ticks)
+Clique table members: 281.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.38 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        1.0000     2                      1.0000       74         
+print s[i]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[-0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[-0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+print n
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0]
+将物品  [0, 1, 2, 4, 5, 6, 7, 8, 10, 11]  放进袋子  5  袋子种类为2
+patten : [3, 2, 2, 1, 0, 2, 2]
+pattern good
+排序前[0, 1, 2, 4, 5, 6, 7, 8, 10, 11]
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[0, 1, 2, 10, 11, 4, 5, 6, 7, 8]
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[10, 7, 4, 5, 0, 8, 1, 6, 2, 11]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+6
+——————————————————————————————————————————第2层——————————————————————————————————————
+66
+——————————————————————————————————————————第3层——————————————————————————————————————
+500
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+——————————————————————————————————————————第8层——————————————————————————————————————
+500
+——————————————————————————————————————————第9层——————————————————————————————————————
+500
+haha
+Position{type=5, x=0, y=0, z=0, lx=250, ly=180, lz=30}
+Position{type=2, x=0, y=0, z=30, lx=240, ly=60, lz=60}
+Position{type=1, x=0, y=60, z=30, lx=240, ly=60, lz=60}
+Position{type=1, x=0, y=0, z=90, lx=240, ly=60, lz=60}
+Position{type=0, x=0, y=120, z=30, lx=300, ly=80, lz=100}
+Position{type=3, x=250, y=0, z=0, lx=20, ly=110, lz=130}
+Position{type=0, x=0, y=200, z=0, lx=300, ly=80, lz=100}
+Position{type=2, x=0, y=60, z=90, lx=240, ly=60, lz=60}
+Position{type=0, x=0, y=200, z=100, lx=300, ly=100, lz=80}
+Position{type=5, x=0, y=0, z=150, lx=250, ly=180, lz=30}
+needToSolve=true needToAddCut=false
+将物品  [3, 9]  放进袋子  6  袋子种类为2
+patten : [1, 0, 0, 0, 1, 0, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[3, 9],6
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 3 times.
+MIP Presolve eliminated 0 rows and 3 columns.
+MIP Presolve modified 19 coefficients.
+Aggregator did 6 substitutions.
+Reduced MIP has 24 rows, 24 columns, and 99 nonzeros.
+Reduced MIP has 17 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.18 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.27 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.27 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.27 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+*     0+    0                            2.0000        1.0000            50.00%
+print s[i]
+[0.0, 0.0, 0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, 0.0, -0.0, 0.0, 1.0, 0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, 0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0]
+print n
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0]
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [4, 2, 2, 1, 1, 2, 2]
+pattern good
+排序前[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[9, 0, 1, 2, 3, 10, 11, 4, 5, 6, 7, 8]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[0, 6, 11, 2, 7, 4, 3, 5, 8, 9, 1, 10]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+4
+——————————————————————————————————————————第2层——————————————————————————————————————
+40
+——————————————————————————————————————————第3层——————————————————————————————————————
+286
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+——————————————————————————————————————————第8层——————————————————————————————————————
+500
+——————————————————————————————————————————第9层——————————————————————————————————————
+500
+——————————————————————————————————————————第10层——————————————————————————————————————
+500
+装不完，装了10
+addCuts——IloRange  : -infinity <= (1.0*s_0,5 + 1.0*s_6,5 + 1.0*s_11,5 + 1.0*s_2,5 + 1.0*s_7,5 + 1.0*s_4,5 + 1.0*s_3,5 + 1.0*s_5,5 + 1.0*s_8,5 + 1.0*s_9,5 + 1.0*s_1,5 + 1.0*s_10,5 - 11.0*n_5) <= 0.0无法将物品 [0, 6, 11, 2, 7, 4, 3, 5, 8, 9, 1, 10]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+      0     0        1.0063     2        2.0000      Cuts: 18      122   49.68%
+print s[i]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[-0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[-0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+print n
+[1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [8]  放进袋子  0  袋子种类为0
+patten : [0, 0, 0, 1, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[8],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 1 time.
+MIP Presolve eliminated 8 rows and 6 columns.
+MIP Presolve modified 30 coefficients.
+Reduced MIP has 6 rows, 9 columns, and 18 nonzeros.
+Reduced MIP has 9 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.03 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.05 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.05 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.05 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [4, 2, 2, 0, 1, 2, 2]
+pattern good
+排序前[0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+排序后[9, 0, 1, 2, 3, 10, 11, 4, 5, 6, 7]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+排序后[11, 4, 9, 5, 10, 6, 2, 1, 3, 7, 0]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+6
+——————————————————————————————————————————第2层——————————————————————————————————————
+66
+——————————————————————————————————————————第3层——————————————————————————————————————
+500
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+——————————————————————————————————————————第8层——————————————————————————————————————
+500
+——————————————————————————————————————————第9层——————————————————————————————————————
+20
+装不完，装了9
+addCuts——IloRange  : -infinity <= (1.0*s_11,5 + 1.0*s_4,5 + 1.0*s_9,5 + 1.0*s_5,5 + 1.0*s_10,5 + 1.0*s_6,5 + 1.0*s_2,5 + 1.0*s_1,5 + 1.0*s_3,5 + 1.0*s_7,5 + 1.0*s_0,5 - 10.0*n_5) <= 0.0无法将物品 [11, 4, 9, 5, 10, 6, 2, 1, 3, 7, 0]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+      0     0        1.0548     2        2.0000       Cuts: 9      139   47.26%
+print s[i]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, -0.0, -0.0, 0.0, 1.0, 0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, -0.0, -0.0, 0.0, 1.0, 0.0]
+[1.0, -0.0, 0.0, -0.0, -0.0, -0.0, 0.0]
+[-0.0, -0.0, 0.0, 0.0, -0.0, 1.0, 0.0]
+[-0.0, 1.0, 0.0, -0.0, -0.0, -0.0, 0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, 0.0, -0.0, 0.0, 1.0, 0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, 0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, 0.0, 0.0, -0.0, 1.0, 0.0]
+print n
+[1.0, 1.0, 0.0, 0.0, 0.0, 1.0, 0.0]
+将物品  [4]  放进袋子  0  袋子种类为0
+patten : [0, 1, 0, 0, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[4],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 3 times.
+MIP Presolve eliminated 7 rows and 8 columns.
+MIP Presolve modified 14 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.03 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.04 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.04 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [6]  放进袋子  1  袋子种类为0
+patten : [0, 0, 1, 0, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[6],1
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 3 times.
+MIP Presolve eliminated 7 rows and 8 columns.
+MIP Presolve modified 14 coefficients.
+Aggregator did 7 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.03 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.04 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.04 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 5, 7, 8, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [4, 1, 1, 1, 1, 2, 2]
+pattern good
+排序前[0, 1, 2, 3, 5, 7, 8, 9, 10, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[9, 0, 1, 2, 3, 10, 11, 5, 7, 8]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[8, 11, 5, 7, 0, 10, 9, 2, 3, 1]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+6
+——————————————————————————————————————————第2层——————————————————————————————————————
+72
+——————————————————————————————————————————第3层——————————————————————————————————————
+500
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+——————————————————————————————————————————第8层——————————————————————————————————————
+500
+——————————————————————————————————————————第9层——————————————————————————————————————
+8
+装不完，装了9
+addCuts——IloRange  : -infinity <= (1.0*s_8,5 + 1.0*s_11,5 + 1.0*s_5,5 + 1.0*s_7,5 + 1.0*s_0,5 + 1.0*s_10,5 + 1.0*s_9,5 + 1.0*s_2,5 + 1.0*s_3,5 + 1.0*s_1,5 - 9.0*n_5) <= 0.0无法将物品 [8, 11, 5, 7, 0, 10, 9, 2, 3, 1]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+
+Repeating presolve.
+Tried aggregator 1 time.
+MIP Presolve eliminated 16 rows and 26 columns.
+MIP Presolve modified 29 coefficients.
+Reduced MIP has 44 rows, 63 columns, and 211 nonzeros.
+Reduced MIP has 63 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.16 ticks)
+Probing time = 0.00 sec. (0.09 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 44 rows, 63 columns, and 211 nonzeros.
+Reduced MIP has 63 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.09 ticks)
+Represolve time = 0.00 sec. (0.43 ticks)
+Probing time = 0.00 sec. (0.08 ticks)
+Clique table members: 201.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: none, using 1 thread.
+Root relaxation solution time = 0.00 sec. (0.52 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0+    0                            2.0000        1.0548            47.26%
+      0     0        1.0593    31        2.0000        1.0593      238   47.04%
+      0     0        1.0781    31        2.0000      Cuts: 29      276   46.10%
+      0     0        1.0800    31        2.0000       Cuts: 9      283   46.00%
+print s[i]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, 1.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+print n
+[0.0, 0.0, 1.0, 0.0, -0.0, 1.0, -0.0]
+将物品  [10]  放进袋子  2  袋子种类为1
+patten : [0, 0, 0, 0, 0, 1, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[10],2
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 4 times.
+MIP Presolve eliminated 6 rows and 7 columns.
+MIP Presolve modified 15 coefficients.
+Aggregator did 8 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.04 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.05 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.05 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11]  放进袋子  5  袋子种类为2
+patten : [4, 2, 2, 1, 1, 1, 2]
+pattern good
+排序前[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[9, 0, 1, 2, 3, 11, 4, 5, 6, 7, 8]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[7, 11, 6, 0, 5, 9, 1, 2, 4, 3, 8]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+6
+——————————————————————————————————————————第2层——————————————————————————————————————
+66
+——————————————————————————————————————————第3层——————————————————————————————————————
+500
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+——————————————————————————————————————————第8层——————————————————————————————————————
+500
+装不完，装了8
+addCuts——IloRange  : -infinity <= (1.0*s_7,5 + 1.0*s_11,5 + 1.0*s_6,5 + 1.0*s_0,5 + 1.0*s_5,5 + 1.0*s_9,5 + 1.0*s_1,5 + 1.0*s_2,5 + 1.0*s_4,5 + 1.0*s_3,5 + 1.0*s_8,5 - 10.0*n_5) <= 0.0无法将物品 [7, 11, 6, 0, 5, 9, 1, 2, 4, 3, 8]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+      0     0        1.0883    31        2.0000       Cuts: 4      293   45.58%
+      0     0        1.0941    31        2.0000      Cuts: 11      305   45.30%
+      0     0        1.0941    31        2.0000       Cuts: 3      310   45.30%
+print s[i]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[1.0, 0.0, 0.0, 0.0, -0.0, 0.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[1.0, 0.0, 0.0, 0.0, -0.0, 0.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+将物品  [4, 8]  放进袋子  0  袋子种类为0
+patten : [0, 1, 0, 1, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[4, 8],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 4 times.
+MIP Presolve eliminated 2 rows and 3 columns.
+MIP Presolve modified 24 coefficients.
+Aggregator did 7 substitutions.
+Reduced MIP has 21 rows, 23 columns, and 82 nonzeros.
+Reduced MIP has 16 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.22 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.30 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.30 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.30 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 5, 6, 7, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [4, 1, 2, 0, 1, 2, 2]
+pattern good
+排序前[0, 1, 2, 3, 5, 6, 7, 9, 10, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+排序后[9, 0, 1, 2, 3, 10, 11, 5, 6, 7]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+排序后[10, 9, 3, 0, 6, 2, 1, 11, 7, 5]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+6
+——————————————————————————————————————————第2层——————————————————————————————————————
+45
+——————————————————————————————————————————第3层——————————————————————————————————————
+266
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+16
+——————————————————————————————————————————第8层——————————————————————————————————————
+72
+——————————————————————————————————————————第9层——————————————————————————————————————
+16
+装不完，装了9
+addCuts——IloRange  : -infinity <= (1.0*s_10,5 + 1.0*s_9,5 + 1.0*s_3,5 + 1.0*s_0,5 + 1.0*s_6,5 + 1.0*s_2,5 + 1.0*s_1,5 + 1.0*s_11,5 + 1.0*s_7,5 + 1.0*s_5,5 - 9.0*n_5) <= 0.0无法将物品 [10, 9, 3, 0, 6, 2, 1, 11, 7, 5]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+      0     0        1.1004    31        2.0000       Cuts: 8      341   44.98%
+      0     0        1.1005    31        2.0000       Cuts: 6      346   44.97%
+print s[i]
+[0.0, -0.0, 0.0, -0.0, -0.0, 1.0000000000000009, -0.0]
+[0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, 1.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, 1.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, 1.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, 1.0, -0.0, -0.0, -0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, 1.0, -0.0, -0.0, 0.0, -0.0]
+[-0.0, -0.0, 1.0, -0.0, -0.0, -0.0, -0.0]
+print n
+[0.0, 0.0, 1.0, 0.0, -0.0, 1.0, -0.0]
+将物品  [4, 5, 6, 7, 10, 11]  放进袋子  2  袋子种类为1
+patten : [0, 2, 2, 0, 0, 2, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[4, 5, 6, 7, 10, 11],2
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 4 times.
+MIP Presolve eliminated 8 rows and 23 columns.
+MIP Presolve modified 222 coefficients.
+Aggregator did 26 substitutions.
+Reduced MIP has 130 rows, 116 columns, and 533 nonzeros.
+Reduced MIP has 97 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.32 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (1.80 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (1.81 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (1.81 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 8, 9]  放进袋子  5  袋子种类为2
+patten : [4, 0, 0, 1, 1, 0, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[0, 1, 2, 3, 8, 9],5
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 3 times.
+MIP Presolve eliminated 6 rows and 24 columns.
+MIP Presolve modified 177 coefficients.
+Aggregator did 12 substitutions.
+Reduced MIP has 146 rows, 129 columns, and 695 nonzeros.
+Reduced MIP has 110 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (1.11 ticks)
+Found incumbent of value 0.000000 after 0.02 sec. (1.70 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (1.71 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (1.71 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+*     0+    0                            1.7000        1.1005            35.26%
+print s[i]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, 0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[1.0, 0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+将物品  [6, 7]  放进袋子  0  袋子种类为0
+patten : [0, 0, 2, 0, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[6, 7],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 4 times.
+MIP Presolve eliminated 5 rows and 10 columns.
+MIP Presolve modified 25 coefficients.
+Aggregator did 14 substitutions.
+Reduced MIP has 11 rows, 9 columns, and 35 nonzeros.
+Reduced MIP has 5 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.16 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.20 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.20 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.20 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 4, 5, 8, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [4, 2, 0, 1, 1, 2, 2]
+pattern good
+排序前[0, 1, 2, 3, 4, 5, 8, 9, 10, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[9, 0, 1, 2, 3, 10, 11, 4, 5, 8]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[4, 2, 8, 3, 0, 10, 11, 9, 5, 1]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+6
+——————————————————————————————————————————第2层——————————————————————————————————————
+64
+——————————————————————————————————————————第3层——————————————————————————————————————
+500
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+——————————————————————————————————————————第8层——————————————————————————————————————
+500
+——————————————————————————————————————————第9层——————————————————————————————————————
+252
+装不完，装了9
+addCuts——IloRange  : -infinity <= (1.0*s_4,5 + 1.0*s_2,5 + 1.0*s_8,5 + 1.0*s_3,5 + 1.0*s_0,5 + 1.0*s_10,5 + 1.0*s_11,5 + 1.0*s_9,5 + 1.0*s_5,5 + 1.0*s_1,5 - 9.0*n_5) <= 0.0无法将物品 [4, 2, 8, 3, 0, 10, 11, 9, 5, 1]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+      0     2        1.1005    32        1.7000        1.1005      346   35.26%
+Elapsed time = 1.13 sec. (13.63 ticks, tree = 0.01 MB, solutions = 2)
+print s[i]
+[-0.0, -0.0, 1.0, 0.0, -0.0, -0.0, -0.0]
+[-0.0, 0.0, 1.0, 0.0, -0.0, -0.0, -0.0]
+[-0.0, 0.0, 0.0, 1.0, -0.0, -0.0, -0.0]
+[-0.0, 0.0, -0.0, 1.0, -0.0, 0.0, -0.0]
+[-0.0, -0.0, 1.0, -0.0, -0.0, 0.0, -0.0]
+[-0.0, -0.0, 1.0, 0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, 1.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, 1.0, -0.0, -0.0, -0.0, -0.0]
+[0.0, -0.0, 1.0, -0.0, -0.0, 0.0, -0.0]
+[-0.0, -0.0, 0.0, 1.0, -0.0, 0.0, -0.0]
+[-0.0, -0.0, 1.0, 0.0, -0.0, -0.0, -0.0]
+[-0.0, -0.0, -0.0, 1.0, -0.0, -0.0, -0.0]
+print n
+[0.0, -0.0, 1.0, 1.0, -0.0, 0.0, -0.0]
+将物品  [0, 1, 4, 5, 6, 7, 8, 10]  放进袋子  2  袋子种类为1
+patten : [2, 2, 2, 1, 0, 1, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[0, 1, 4, 5, 6, 7, 8, 10],2
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 4 times.
+MIP Presolve eliminated 14 rows and 33 columns.
+MIP Presolve modified 391 coefficients.
+Aggregator did 31 substitutions.
+Reduced MIP has 228 rows, 203 columns, and 989 nonzeros.
+Reduced MIP has 178 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (2.65 ticks)
+Probing fixed 1 vars, tightened 0 bounds.
+Probing time = 0.00 sec. (0.86 ticks)
+Cover probing fixed 0 vars, tightened 7 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve eliminated 0 rows and 1 columns.
+MIP Presolve modified 27 coefficients.
+Reduced MIP has 228 rows, 202 columns, and 979 nonzeros.
+Reduced MIP has 177 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.93 ticks)
+Probing time = 0.00 sec. (0.81 ticks)
+Clique table members: 735.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (0.63 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0000    61                      0.0000       69         
+      0     0        0.0000    61                    Cuts: 13       90         
+      0     0        0.0000    61                    Cuts: 96      176         
+      0     0        0.0000    61                    Cuts: 66      235         
+      0     0        0.0000    61                   Cuts: 130      309         
+      0     0        0.0000    61                    Cuts: 93      367         
+      0     2        0.0000    21                      0.0000      367         
+Elapsed time = 0.08 sec. (40.80 ticks, tree = 0.02 MB, solutions = 0)
+
+GUB cover cuts applied:  2
+Clique cuts applied:  17
+Cover cuts applied:  26
+Implied bound cuts applied:  206
+Flow cuts applied:  18
+Mixed integer rounding cuts applied:  17
+Zero-half cuts applied:  2
+Gomory fractional cuts applied:  3
+
+Root node processing (before b&c):
+  Real time             =    0.06 sec. (40.68 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.19 sec. (112.61 ticks)
+  Sync time (average)   =    0.03 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.25 sec. (153.29 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_0,2 + 1.0*s_1,2 + 1.0*s_4,2 + 1.0*s_5,2 + 1.0*s_6,2 + 1.0*s_7,2 + 1.0*s_8,2 + 1.0*s_10,2 - 7.0*n_2) <= 0.0无法将物品 [0, 1, 4, 5, 6, 7, 8, 10]  放进袋子 2 袋子种类为1
+needToSolve=true needToAddCut=true
+将物品  [2, 3, 9, 11]  放进袋子  3  袋子种类为1
+patten : [2, 0, 0, 0, 1, 1, 1]
+pattern good
+Bag{type=1, X=440.0, Y=410.0, l=0.0, w=0.0, h=0.0, maxVolume=1.1340839946075162E7, cost=0.7, num=1}
+[2, 3, 9, 11],3
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 3 times.
+MIP Presolve eliminated 13 rows and 22 columns.
+MIP Presolve added 1 rows and 0 columns.
+MIP Presolve modified 106 coefficients.
+Aggregator did 16 substitutions.
+Reduced MIP has 55 rows, 49 columns, and 225 nonzeros.
+Reduced MIP has 37 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.53 ticks)
+Probing fixed 3 vars, tightened 1 bounds.
+Probing time = 0.00 sec. (0.12 ticks)
+Cover probing fixed 0 vars, tightened 5 bounds.
+Tried aggregator 1 time.
+MIP Presolve eliminated 1 rows and 5 columns.
+MIP Presolve modified 35 coefficients.
+Reduced MIP has 54 rows, 44 columns, and 202 nonzeros.
+Reduced MIP has 32 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.21 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (1.30 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (1.30 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_2,3 + 1.0*s_3,3 + 1.0*s_9,3 + 1.0*s_11,3 - 3.0*n_3) <= 0.0无法将物品 [2, 3, 9, 11]  放进袋子 3 袋子种类为1
+needToSolve=true needToAddCut=true
+print s[i]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[-0.0, 0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, 0.0, -0.0, 1.0, -0.0]
+[1.0, 0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+将物品  [0, 1, 4]  放进袋子  0  袋子种类为0
+patten : [2, 1, 0, 0, 0, 0, 0]
+pattern good
+addCuts——IloRange  : -infinity <= (1.0*s_0,0 + 1.0*s_1,0 + 1.0*s_4,0 - 2.0*n_0) <= 0.0无法将物品 [0, 1, 4]  放进袋子 0 袋子种类为0
+needToSolve=false needToAddCut=true
+将物品  [2, 3, 5, 6, 7, 8, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [2, 1, 2, 1, 1, 2, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[2, 3, 5, 6, 7, 8, 9, 10, 11],5
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 5 times.
+MIP Presolve eliminated 5 rows and 24 columns.
+MIP Presolve modified 420 coefficients.
+Aggregator did 27 substitutions.
+Reduced MIP has 306 rows, 276 columns, and 1434 nonzeros.
+Reduced MIP has 248 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (4.07 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (5.31 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (5.33 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (5.33 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+print s[i]
+[1.0, 0.0, 0.0, 0.0, -0.0, 0.0, -0.0]
+[1.0, 0.0, 0.0, 0.0, -0.0, 0.0, -0.0]
+[-0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[1.0, 0.0, 0.0, 0.0, -0.0, 0.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+将物品  [0, 1, 10]  放进袋子  0  袋子种类为0
+patten : [2, 0, 0, 0, 0, 1, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[0, 1, 10],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Row 'width_0,0' infeasible, all entries at implied bounds.
+Presolve time = 0.00 sec. (0.13 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.14 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.14 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_0,0 + 1.0*s_1,0 + 1.0*s_10,0 - 2.0*n_0) <= 0.0无法将物品 [0, 1, 10]  放进袋子 0 袋子种类为0
+needToSolve=true needToAddCut=true
+将物品  [2, 3, 4, 5, 6, 7, 8, 9, 11]  放进袋子  5  袋子种类为2
+patten : [2, 2, 2, 1, 1, 1, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[2, 3, 4, 5, 6, 7, 8, 9, 11],5
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 5 times.
+MIP Presolve eliminated 7 rows and 26 columns.
+MIP Presolve modified 417 coefficients.
+Aggregator did 30 substitutions.
+Reduced MIP has 301 rows, 271 columns, and 1375 nonzeros.
+Reduced MIP has 243 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (4.10 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (6.07 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (6.09 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (6.09 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+print s[i]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, 0.0, -0.0, 1.0, -0.0]
+[1.0, 0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+将物品  [4, 10]  放进袋子  0  袋子种类为0
+patten : [0, 1, 0, 0, 0, 1, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[4, 10],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 4 times.
+MIP Presolve eliminated 5 rows and 10 columns.
+MIP Presolve added 1 rows and 0 columns.
+MIP Presolve modified 33 coefficients.
+Aggregator did 11 substitutions.
+Reduced MIP has 15 rows, 12 columns, and 45 nonzeros.
+Reduced MIP has 6 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.18 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.21 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.21 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.21 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 5, 6, 7, 8, 9, 11]  放进袋子  5  袋子种类为2
+patten : [4, 1, 2, 1, 1, 1, 2]
+pattern good
+排序前[0, 1, 2, 3, 5, 6, 7, 8, 9, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[9, 0, 1, 2, 3, 11, 5, 6, 7, 8]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[0, 5, 8, 1, 11, 6, 2, 7, 9, 3]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+4
+——————————————————————————————————————————第2层——————————————————————————————————————
+40
+——————————————————————————————————————————第3层——————————————————————————————————————
+500
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+——————————————————————————————————————————第8层——————————————————————————————————————
+500
+——————————————————————————————————————————第9层——————————————————————————————————————
+80
+装不完，装了9
+addCuts——IloRange  : -infinity <= (1.0*s_0,5 + 1.0*s_5,5 + 1.0*s_8,5 + 1.0*s_1,5 + 1.0*s_11,5 + 1.0*s_6,5 + 1.0*s_2,5 + 1.0*s_7,5 + 1.0*s_9,5 + 1.0*s_3,5 - 9.0*n_5) <= 0.0无法将物品 [0, 5, 8, 1, 11, 6, 2, 7, 9, 3]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+print s[i]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[-0.0, 0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+将物品  [0, 1]  放进袋子  0  袋子种类为0
+patten : [2, 0, 0, 0, 0, 0, 0]
+pattern good
+addCuts——IloRange  : -infinity <= (1.0*s_0,0 + 1.0*s_1,0 - 1.0*n_0) <= 0.0无法将物品 [0, 1]  放进袋子 0 袋子种类为0
+needToSolve=false needToAddCut=true
+将物品  [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [2, 2, 2, 1, 1, 2, 2]
+pattern good
+排序前[2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[9, 2, 3, 10, 11, 4, 5, 6, 7, 8]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[5, 11, 9, 8, 3, 6, 2, 4, 7, 10]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+6
+——————————————————————————————————————————第2层——————————————————————————————————————
+66
+——————————————————————————————————————————第3层——————————————————————————————————————
+426
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+——————————————————————————————————————————第8层——————————————————————————————————————
+500
+——————————————————————————————————————————第9层——————————————————————————————————————
+500
+装不完，装了9
+addCuts——IloRange  : -infinity <= (1.0*s_5,5 + 1.0*s_11,5 + 1.0*s_9,5 + 1.0*s_8,5 + 1.0*s_3,5 + 1.0*s_6,5 + 1.0*s_2,5 + 1.0*s_4,5 + 1.0*s_7,5 + 1.0*s_10,5 - 9.0*n_5) <= 0.0无法将物品 [5, 11, 9, 8, 3, 6, 2, 4, 7, 10]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+print s[i]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, 0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+将物品  [4, 8]  放进袋子  0  袋子种类为0
+patten : [0, 1, 0, 1, 0, 0, 0]
+pattern good
+needToSolve=false needToAddCut=false
+将物品  [0, 1, 2, 3, 5, 6, 7, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [4, 1, 2, 0, 1, 2, 2]
+pattern good
+排序前[0, 1, 2, 3, 5, 6, 7, 9, 10, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+排序后[9, 0, 1, 2, 3, 10, 11, 5, 6, 7]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+排序后[3, 1, 9, 0, 10, 11, 2, 7, 6, 5]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+4
+——————————————————————————————————————————第2层——————————————————————————————————————
+40
+——————————————————————————————————————————第3层——————————————————————————————————————
+156
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+——————————————————————————————————————————第8层——————————————————————————————————————
+406
+装不完，装了8
+addCuts——IloRange  : -infinity <= (1.0*s_3,5 + 1.0*s_1,5 + 1.0*s_9,5 + 1.0*s_0,5 + 1.0*s_10,5 + 1.0*s_11,5 + 1.0*s_2,5 + 1.0*s_7,5 + 1.0*s_6,5 + 1.0*s_5,5 - 9.0*n_5) <= 0.0无法将物品 [3, 1, 9, 0, 10, 11, 2, 7, 6, 5]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+print s[i]
+[0.0, -0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, 0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 0.9999999999999984, -0.0]
+[0.0, -0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+将物品  [4, 5]  放进袋子  0  袋子种类为0
+patten : [0, 2, 0, 0, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[4, 5],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 4 times.
+MIP Presolve eliminated 5 rows and 10 columns.
+MIP Presolve modified 25 coefficients.
+Aggregator did 14 substitutions.
+Reduced MIP has 11 rows, 9 columns, and 35 nonzeros.
+Reduced MIP has 5 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.16 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.20 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.20 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.20 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 6, 7, 8, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [4, 0, 2, 1, 1, 2, 2]
+pattern good
+排序前[0, 1, 2, 3, 6, 7, 8, 9, 10, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[9, 0, 1, 2, 3, 10, 11, 6, 7, 8]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=0, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[0, 6, 9, 11, 8, 3, 2, 1, 10, 7]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+4
+——————————————————————————————————————————第2层——————————————————————————————————————
+40
+——————————————————————————————————————————第3层——————————————————————————————————————
+252
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+——————————————————————————————————————————第8层——————————————————————————————————————
+500
+装不完，装了8
+addCuts——IloRange  : -infinity <= (1.0*s_0,5 + 1.0*s_6,5 + 1.0*s_9,5 + 1.0*s_11,5 + 1.0*s_8,5 + 1.0*s_3,5 + 1.0*s_2,5 + 1.0*s_1,5 + 1.0*s_10,5 + 1.0*s_7,5 - 9.0*n_5) <= 0.0无法将物品 [0, 6, 9, 11, 8, 3, 2, 1, 10, 7]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+print s[i]
+[0.0, -0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, 0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+将物品  [4, 5, 8]  放进袋子  0  袋子种类为0
+patten : [0, 2, 0, 1, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[4, 5, 8],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 4 times.
+MIP Presolve eliminated 4 rows and 9 columns.
+MIP Presolve modified 50 coefficients.
+Aggregator did 12 substitutions.
+Reduced MIP has 37 rows, 36 columns, and 145 nonzeros.
+Reduced MIP has 26 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.40 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.54 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.54 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.54 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 6, 7, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [4, 0, 2, 0, 1, 2, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[0, 1, 2, 3, 6, 7, 9, 10, 11],5
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 5 times.
+MIP Presolve eliminated 9 rows and 38 columns.
+MIP Presolve modified 430 coefficients.
+Aggregator did 26 substitutions.
+Reduced MIP has 303 rows, 263 columns, and 1422 nonzeros.
+Reduced MIP has 235 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (3.93 ticks)
+Probing time = 0.00 sec. (0.95 ticks)
+Cover probing fixed 0 vars, tightened 14 bounds.
+Tried aggregator 1 time.
+Detecting symmetries...
+MIP Presolve modified 82 coefficients.
+Reduced MIP has 303 rows, 263 columns, and 1392 nonzeros.
+Reduced MIP has 235 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (1.27 ticks)
+Probing time = 0.00 sec. (0.66 ticks)
+Clique table members: 448.
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Root relaxation solution time = 0.00 sec. (0.68 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0000    78                      0.0000      100         
+      0     0        0.0000    78                    Cuts: 26      130         
+      0     0        0.0000    78                    Cuts: 90      180         
+      0     0        0.0000    78                    Cuts: 31      201         
+      0     0        0.0000    78                   Cuts: 103      259         
+Detecting symmetries...
+      0     2        0.0000    30                      0.0000      259         
+Elapsed time = 0.11 sec. (65.19 ticks, tree = 0.02 MB, solutions = 0)
+   7091   475        0.0000    16                      0.0000    56317         
+
+Performing restart 1
+
+Repeating presolve.
+Tried aggregator 1 time.
+Reduced MIP has 303 rows, 263 columns, and 1392 nonzeros.
+Reduced MIP has 235 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.67 ticks)
+Tried aggregator 1 time.
+Reduced MIP has 303 rows, 263 columns, and 1392 nonzeros.
+Reduced MIP has 235 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.02 sec. (0.87 ticks)
+Represolve time = 0.02 sec. (3.02 ticks)
+   7309     0        0.0000   104                    Cuts: 82    66437         
+   7309     0        0.0000   104                   Cuts: 144    66508         
+   7309     0        0.0000   104                     Cuts: 4    66515         
+   7309     0        0.0000   104                    Cuts: 86    66538         
+   7309     0        0.0000   104                    Cuts: 55    66586         
+   7309     0        0.0000   104                    Cuts: 23    66608         
+   7309     0        0.0000   104                    Cuts: 36    66644         
+   9890   658    infeasible                            0.0000    83943         
+  15700  1003    infeasible                            0.0000   137350         
+  20429  1108        0.0000    22                      0.0000   182656         
+  25833   889        0.0000    15                      0.0000   233402         
+  29039   751        0.0000    10                      0.0000   295489         
+  35113   738    infeasible                            0.0000   344831         
+  39207   581        0.0000    28                      0.0000   399874         
+  45528   429    infeasible                            0.0000   463564         
+
+GUB cover cuts applied:  3
+Clique cuts applied:  1
+Cover cuts applied:  25
+Implied bound cuts applied:  19
+Flow cuts applied:  13
+Mixed integer rounding cuts applied:  18
+Zero-half cuts applied:  1
+Gomory fractional cuts applied:  9
+
+Root node processing (before b&c):
+  Real time             =    0.11 sec. (65.04 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    5.67 sec. (2862.46 ticks)
+  Sync time (average)   =    0.75 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    5.78 sec. (2927.50 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_0,5 + 1.0*s_1,5 + 1.0*s_2,5 + 1.0*s_3,5 + 1.0*s_6,5 + 1.0*s_7,5 + 1.0*s_9,5 + 1.0*s_10,5 + 1.0*s_11,5 - 8.0*n_5) <= 0.0无法将物品 [0, 1, 2, 3, 6, 7, 9, 10, 11]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+print s[i]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, 0.0, -0.0, 1.0, -0.0]
+[1.0, 0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+将物品  [0, 4]  放进袋子  0  袋子种类为0
+patten : [1, 1, 0, 0, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[0, 4],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Row 'width_0,0' infeasible, all entries at implied bounds.
+Presolve time = 0.00 sec. (0.06 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.07 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.07 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_0,0 + 1.0*s_4,0 - 1.0*n_0) <= 0.0无法将物品 [0, 4]  放进袋子 0 袋子种类为0
+needToSolve=true needToAddCut=true
+将物品  [1, 2, 3, 5, 6, 7, 8, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [3, 1, 2, 1, 1, 2, 2]
+pattern good
+排序前[1, 2, 3, 5, 6, 7, 8, 9, 10, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[9, 1, 2, 3, 10, 11, 5, 6, 7, 8]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=3, id=8, p=130, q=20, r=110, num=1, volume=286000}
+排序后[6, 1, 5, 8, 11, 2, 10, 9, 7, 3]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+6
+——————————————————————————————————————————第2层——————————————————————————————————————
+56
+——————————————————————————————————————————第3层——————————————————————————————————————
+500
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+——————————————————————————————————————————第8层——————————————————————————————————————
+500
+——————————————————————————————————————————第9层——————————————————————————————————————
+428
+装不完，装了9
+addCuts——IloRange  : -infinity <= (1.0*s_6,5 + 1.0*s_1,5 + 1.0*s_5,5 + 1.0*s_8,5 + 1.0*s_11,5 + 1.0*s_2,5 + 1.0*s_10,5 + 1.0*s_9,5 + 1.0*s_7,5 + 1.0*s_3,5 - 9.0*n_5) <= 0.0无法将物品 [6, 1, 5, 8, 11, 2, 10, 9, 7, 3]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+print s[i]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, 0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, 0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+将物品  [0, 8]  放进袋子  0  袋子种类为0
+patten : [1, 0, 0, 1, 0, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[0, 8],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Row 'width_0,0' infeasible, all entries at implied bounds.
+Presolve time = 0.00 sec. (0.07 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.08 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.08 ticks)
+子问题求解完毕
+子问题状态=Infeasible
+addCuts——IloRange  : -infinity <= (1.0*s_0,0 + 1.0*s_8,0 - 1.0*n_0) <= 0.0无法将物品 [0, 8]  放进袋子 0 袋子种类为0
+needToSolve=true needToAddCut=true
+将物品  [1, 2, 3, 4, 5, 6, 7, 9, 10, 11]  放进袋子  5  袋子种类为2
+patten : [3, 2, 2, 0, 1, 2, 2]
+pattern good
+排序前[1, 2, 3, 4, 5, 6, 7, 9, 10, 11]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+排序后[9, 1, 2, 3, 10, 11, 4, 5, 6, 7]
+Item{type=4, id=9, p=170, q=80, r=230, num=1, volume=3128000}
+Item{type=0, id=1, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=2, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=0, id=3, p=100, q=80, r=300, num=1, volume=2400000}
+Item{type=5, id=10, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=5, id=11, p=250, q=180, r=30, num=1, volume=1350000}
+Item{type=1, id=4, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=1, id=5, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=6, p=60, q=60, r=240, num=1, volume=864000}
+Item{type=2, id=7, p=60, q=60, r=240, num=1, volume=864000}
+排序后[11, 1, 6, 9, 2, 5, 3, 4, 10, 7]
+——————————————————————————————————————————第0层——————————————————————————————————————
+1
+——————————————————————————————————————————第1层——————————————————————————————————————
+6
+——————————————————————————————————————————第2层——————————————————————————————————————
+41
+——————————————————————————————————————————第3层——————————————————————————————————————
+396
+——————————————————————————————————————————第4层——————————————————————————————————————
+500
+——————————————————————————————————————————第5层——————————————————————————————————————
+500
+——————————————————————————————————————————第6层——————————————————————————————————————
+500
+——————————————————————————————————————————第7层——————————————————————————————————————
+500
+装不完，装了7
+addCuts——IloRange  : -infinity <= (1.0*s_11,5 + 1.0*s_1,5 + 1.0*s_6,5 + 1.0*s_9,5 + 1.0*s_2,5 + 1.0*s_5,5 + 1.0*s_3,5 + 1.0*s_4,5 + 1.0*s_10,5 + 1.0*s_7,5 - 9.0*n_5) <= 0.0无法将物品 [11, 1, 6, 9, 2, 5, 3, 4, 10, 7]  放进袋子 5 袋子种类为2
+needToSolve=true needToAddCut=true
+print s[i]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+print n
+[1.0, -0.0, 0.0, 0.0, -0.0, 1.0, -0.0]
+将物品  [4, 6, 9]  放进袋子  0  袋子种类为0
+patten : [0, 1, 1, 0, 1, 0, 0]
+pattern good
+Bag{type=0, X=370.0, Y=330.0, l=0.0, w=0.0, h=0.0, maxVolume=6305299.284992639, cost=0.4, num=1}
+[4, 6, 9],0
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 4 times.
+MIP Presolve eliminated 15 rows and 22 columns.
+MIP Presolve modified 71 coefficients.
+Aggregator did 18 substitutions.
+Reduced MIP has 20 rows, 17 columns, and 69 nonzeros.
+Reduced MIP has 11 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (0.37 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (0.43 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (0.44 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (0.44 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+将物品  [0, 1, 2, 3, 5, 7, 8, 10, 11]  放进袋子  5  袋子种类为2
+patten : [4, 1, 1, 1, 0, 2, 2]
+pattern good
+Bag{type=2, X=520.0, Y=500.0, l=0.0, w=0.0, h=0.0, maxVolume=1.9635004901018865E7, cost=1.0, num=1}
+[0, 1, 2, 3, 5, 7, 8, 10, 11],5
+子问题建模完毕
+Version identifier: 12.10.0.0 | 2019-11-26 | 843d4de2ae
+Tried aggregator 5 times.
+MIP Presolve eliminated 8 rows and 33 columns.
+MIP Presolve modified 417 coefficients.
+Aggregator did 24 substitutions.
+Reduced MIP has 306 rows, 270 columns, and 1456 nonzeros.
+Reduced MIP has 242 binaries, 0 generals, 0 SOSs, and 0 indicators.
+Presolve time = 0.00 sec. (3.95 ticks)
+Found incumbent of value 0.000000 after 0.00 sec. (5.60 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.00 sec. (5.62 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.00 sec. (5.62 ticks)
+子问题求解完毕
+子问题状态=Optimal
+needToSolve=true needToAddCut=false
+*    18     6      integral     0        1.4000        1.1202      562   19.99%
+
+GUB cover cuts applied:  2
+Clique cuts applied:  9
+Cover cuts applied:  1
+Implied bound cuts applied:  2
+Flow cuts applied:  2
+Mixed integer rounding cuts applied:  5
+Zero-half cuts applied:  2
+User cuts applied:  16
+
+Root node processing (before b&c):
+  Real time             =    1.13 sec. (13.63 ticks)
+Sequential b&c:
+  Real time             =    6.53 sec. (3.73 ticks)
+                          ------------
+Total (root+branch&cut) =    7.66 sec. (17.36 ticks)
+!!Thread down
+1.4
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[-0.0, -0.0, 0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, 0.0, -0.0]
+[-0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[1.0, -0.0, -0.0, -0.0, -0.0, -0.0, -0.0]
+[0.0, -0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+[0.0, 0.0, -0.0, -0.0, -0.0, 1.0, -0.0]
+Total time =7.767s
+——————————————————————————————————————————————————
