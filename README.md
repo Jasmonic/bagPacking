@@ -8,5 +8,5 @@
 3.benders模块包括主问题和子问题，子问题可直接使用MILP或者基于Beam Search的启发式算法  
 4.grasp为working中的纯启发式算法，算法思路参考Alvarez-Valdes R , Parreno F , Tamarit J M . A GRASP/Path Relinking algorithm for two- and three-dimensional multiple bin-size bin packing problems[J]. Computers & Operations Research, 2013, 40(12):3081-3090.  
 ## 注意
-1.真实案例数据未上传至本仓库，data文件夹中均为随机生成数据
+1.真实案例数据未上传至本仓库，data文件夹中均为随机生成数据  
 2.clone下来后需要根据文件路径传参，才可运行
