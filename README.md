@@ -1,5 +1,5 @@
 # 装袋项目
-这是我正在研究的课题————三维装袋项目的仓库，代码尚未完全整理，但整体框架基本确定  
+这是我正在研究的课题————三维装袋项目的仓库，代码尚未完全整理，但整体框架基本确定，参考Jean-Franois Cté, Haouari M , Iori M . Combinatorial Benders Decomposition for the Two-Dimensional Bin Packing Problem[J]. Informs Journal on Computing, 2021.    
 整体算法框架为Combinatorial Benders Decomposition  
 调用了cplex12.10.0，基于generic callback接口实现  
 ## 代码结构
